@@ -58,7 +58,7 @@ body {
     border: 1px solid #30B0C7;
     background-color: transparent;
     font-size: 15px;
-    padding: 10px 20px;
+    padding: 10px 22px;
     border-radius: 8px;
     cursor: pointer;
     margin-right: 8px;
@@ -75,7 +75,7 @@ body {
     color: white;
     background-color: #30B0C7;
     font-size: 15px;
-    padding: 10px 20px;
+    padding: 10px 22px;
     border-radius: 8px;
     border: none;
     cursor: pointer;
@@ -288,3 +288,64 @@ body {
     margin-bottom: 30px;
 }
 
+.penyakit {
+    width: 100%;
+    position: relative;
+    align-items: center;
+    padding: 100px 110px;
+    margin-top: 2rem;
+    background-color: #ECFCFF;
+    z-index: 0;
+}
+
+.bakcgound-penyakit {
+    position: absolute;
+    margin-top: -100px;
+    margin-left: -100px;
+    z-index: -1;
+}
+
+.penyakit1 {
+    display: flex;
+    width: 100%;
+    gap: 25px;
+}
+
+.card1 {
+    width: 90%;
+    float: inline-end;
+    background: white;
+    border-radius: 15px;
+    height: 350px;
+    border: 1px solid;
+    border-color: black;
+}
+
+.card_highlight1 {
+    width: 110%;
+    border-color: #30B0C7;
+    background: #30B0C7;
+}
+
+.penyakit2 {
+    display: flex;
+    width: 100%;
+    gap: 25px;
+    margin: 50px 0;
+}
+
+.card2 {
+    width: 90%;
+    float: inline-end;
+    background: white;
+    border-radius: 15px;
+    height: 350px;
+    border: 1px solid;
+    border-color: black;
+}
+
+.card_highlight2 {
+    width: 110%;
+    border-color: #30B0C7;
+    background: #30B0C7;
+}
