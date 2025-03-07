@@ -294,7 +294,7 @@ body {
     align-items: center;
     padding: 100px 110px;
     margin-top: 2rem;
-    background-color: #ECFCFF;
+    background-color: #dcfaffbd;
     z-index: 0;
 }
 
@@ -348,4 +348,21 @@ body {
     width: 110%;
     border-color: #30B0C7;
     background: #30B0C7;
+}
+
+.olahraga {
+    width: 100%;
+    align-items: center;
+    padding: 0px 110px;   
+    margin-top: 10rem;
+}
+
+.olahraga-text h1 {
+    text-align: left;
+    font-family: 'Poppins-Medium';
+    font-stretch: extra-expanded;
+    font-size: 50px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    color: #000;
 }
