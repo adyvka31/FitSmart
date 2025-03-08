@@ -15,11 +15,26 @@
             <li><a href="#">Aktifitas</a></li>
             <li><a href="#">Penyakit</a></li>
         </ul>
+        <img src="../images/fe_bar.png"  class="menu-bar">
         <div class="auth-buttons">
             <button type="button" class="btn-masuk">Masuk</button>
             <button type="button" class="btn-daftar">Daftar</button>
         </div>
+        
+       
     </nav>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-bar')
+        const navLinks = document.querySelector('.nav-links')
+        const authButtons = document.querySelector('.auth-buttons')
+
+        menuBtn.addEventListener('click',()=>{
+            navLinks.classList.toggle('mobile-menu')
+            authButtons.classList.toggle('mobile-menu')
+        })
+        
+    </script>
 
     <section class="hero">
         <div class="hero-content">
