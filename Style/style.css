@@ -29,7 +29,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 110px;
+    padding: 15px 110px 0 110px;
 }
 
 .logo {
@@ -96,7 +96,6 @@ body {
     padding: 0px 110px;
     background: url('../Images/background-hero.svg') no-repeat center;
     background-size: cover;
-    margin-top: -15px;
     height: 100vh;
     width: 100vw;
 }
@@ -115,6 +114,7 @@ body {
     font-weight: bold;
     color: #000;
     line-height: 70px;
+    animation: fadeInLeft 0.7s ease-in-out forwards;
 }
 
 .hero-content h1 span {
@@ -129,6 +129,7 @@ body {
     margin-top: 10px;
     line-height: 1.7;
     margin: 40px 0px;
+    animation: fadeInLeft 0.9s ease-in-out forwards;
 }
 
 .buttons {
@@ -148,6 +149,7 @@ body {
     position: relative;
     box-shadow: 4px 4px 0px black;
     transition: all 0.2s ease-in-out;
+    animation: fadeInLeft 1.2s ease-in-out forwards;
 }
 
 .primary-btn:hover {
@@ -166,6 +168,7 @@ body {
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    animation: fadeInLeft 1.4s ease-in-out forwards;
 }
 
 .secondary-btn:hover {
@@ -178,6 +181,7 @@ body {
     background-image: no-repeat center;
     background-size: contain;
     margin-top: -8rem;
+    animation: fadeInRight 1s ease-in-out forwards;
 }
 
 .brand-logos {
@@ -186,6 +190,10 @@ body {
     justify-content: center;
     margin-top: -6rem;
     flex-wrap: wrap;
+    animation: fadeInUp linear;
+    transition: 0.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
 }
 
 .logo-container {
@@ -228,6 +236,10 @@ body {
     letter-spacing: 0.5px;
     font-weight: bold;
     color: #000;
+    animation: fadeInLeft linear;
+    transition: 0.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
 }
 
 .text-makanan-kiri p {
@@ -239,16 +251,24 @@ body {
     color: #444;
     margin-top: 10px;
     line-height: 1.7;
+    animation: fadeInRight linear;
+    transition: 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .container {
     display: flex;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 80px;
 }
 
 .image-container {
     width: 55%;
+    animation: fadeInUp linear;
+    transition: 0.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 18%;
 }
 
 .image-container img {
@@ -270,6 +290,10 @@ body {
     color: #30B0C7;
     letter-spacing: 2px;
     margin-bottom: 20px;
+    animation: fadeInUp linear;
+    transition: 0.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
 }
 
 .text-container h1 {
@@ -278,6 +302,10 @@ body {
     color: black;
     margin-bottom: 30px;
     line-height: 45px;
+    animation: fadeInUp linear;
+    transition: 0.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
 }
 
 .text-container p {
@@ -287,6 +315,34 @@ body {
     color: #666;
     line-height: 2.5;
     margin-bottom: 30px;
+    animation: fadeInUp linear;
+    transition: 0.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+.primary-btn-makanan {
+    background-color: #30B0C7;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 20px;
+    position: relative;
+    box-shadow: 4px 4px 0px black;
+    transition: all 0.2s ease-in-out;
+    animation: fadeInUp linear;
+    transition: 0.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+.primary-btn-makanan:hover {
+    background-color: #2480aa;
+    box-shadow: none;
 }
 
 .penyakit {
@@ -315,17 +371,79 @@ body {
 .card1 {
     width: 90%;
     float: inline-end;
+    padding: 35px 30px;
     background: white;
     border-radius: 15px;
-    height: 350px;
+    height: 450px;
     border: 1px solid;
     border-color: black;
+    animation: fadeInUp linear;
+    transition: 3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 5% cover 35%;
+}
+.card1 h1, .card2 h1, .card3 h1 {
+    font-family: 'Poppins-Medium';
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.card1 p, .card2 p, .card3 p {
+    width: 90%;
+    font-family: 'Poppins-Light';
+    font-size: 15px;
+    color: #444;
+    line-height: 1.7;
+}
+
+.primary-btn-penyakit {
+    background-color: #30B0C7;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-right: 20px;
+    position: relative;
+    box-shadow: 4px 4px 0px black;
+}
+
+.primary-btn-penyakit:hover {
+    background-color: #2480aa;
+    box-shadow: none;
+}
+
+.secondary-btn-penyakit {
+    background-color: transparent;
+    border: 2px solid #30B0C7;
+    color: #30B0C7;
+    padding: 10px 18px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    animation: fadeInLeft 1.4s ease-in-out forwards;
+}
+
+.secondary-btn-penyakit:hover {
+    background-color: #30B0C7;
+    color: white;
 }
 
 .card_highlight1 {
     width: 110%;
-    border-color: #30B0C7;
-    background: #30B0C7;
+    border: 1px solid black;
+    background-image: url('../Images/penyakit1.svg');
+    background-position: center;
+    background-size: cover;
+    animation: fadeInUp linear;
+    transition: 0.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
 }
 
 .penyakit2 {
@@ -339,16 +457,58 @@ body {
     width: 90%;
     float: inline-end;
     background: white;
+    padding: 35px 30px;
     border-radius: 15px;
-    height: 350px;
+    height: 450px;
     border: 1px solid;
     border-color: black;
+    animation: fadeInUp linear;
+    transition: 3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 5% cover 35%;
 }
 
 .card_highlight2 {
     width: 110%;
-    border-color: #30B0C7;
-    background: #30B0C7;
+    border: 1px solid black;
+    background-image: url('../Images/penyakit2.svg');
+    background-position: center;
+    background-size: cover;
+    transition: 0.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+.penyakit3 {
+    display: flex;
+    width: 100%;
+    gap: 25px;
+}
+
+.card3 {
+    width: 90%;
+    float: inline-end;
+    background: white;
+    padding: 35px 30px;
+    border-radius: 15px;
+    height: 450px;
+    border: 1px solid;
+    border-color: black;
+    animation: fadeInUp linear;
+    transition: 3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 5% cover 35%;
+}
+
+.card_highlight3 {
+    width: 110%;
+    border: 1px solid black;
+    background-image: url('../Images/penyakit3.svg');
+    background-position: center;
+    background-size: cover;
+    transition: 0.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
 }
 
 .olahraga {
@@ -358,14 +518,45 @@ body {
     margin-top: 10rem;
 }
 
-.olahraga-text h1 {
-    text-align: left;
+.background-olahraga {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    margin-left: -7rem;
+}
+
+.olahraga-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-olahraga-kanan h1 {
+    text-align: right;
     font-family: 'Poppins-Medium';
     font-stretch: extra-expanded;
     font-size: 50px;
     letter-spacing: 0.5px;
     font-weight: bold;
     color: #000;
+    animation: fadeInLeft linear;
+    transition: 0.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+.text-olahraga-kiri p {
+    width: 75%;
+    margin: auto;
+    text-align: right;
+    font-family: 'Poppins-Light';
+    font-size: 15px;
+    color: #444;
+    margin-top: 10px;
+    line-height: 1.7;
+    animation: fadeInRight linear;
+    transition: 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .blog-container {
@@ -384,20 +575,27 @@ body {
 
 .blog-card img {
     width: 370px;
-    height: 300px;
+    height: 340px;
     border-radius: 10px;
-    border: 2px solid #30B0C7;
+    border: 2px solid black;
     transition: 0.2s;
+    animation: fadeInUp linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
 }
 
 .blog-card img:hover {
-    box-shadow: 4px 4px 0px #30B0C7;
+    box-shadow: 4px 4px 0px black;
 }
 
 .tags {
     display: flex;
     gap: 10px;
     margin: 10px 0;
+    animation: fadeInUp linear;
+    transition: 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
 }
 
 .tag {
@@ -420,6 +618,10 @@ body {
     font-size: 30px;
     margin: 20px 0;
     font-weight: bold;
+    animation: fadeInUp linear;
+    transition: 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
 }
 
 .blog-card p {
@@ -427,6 +629,34 @@ body {
     font-size: 14px;
     color: #555;
     margin-bottom: 27px;
+    animation: fadeInUp linear;
+    transition: 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+.primary-btn-aktifitas {
+    background-color: #30B0C7;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 20px;
+    position: relative;
+    box-shadow: 4px 4px 0px black;
+    transition: all 0.2s ease-in-out;
+    animation: fadeInUp linear;
+    transition: 0.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+.primary-btn-aktifitas:hover {
+    background-color: #2480aa;
+    box-shadow: none;
 }
 
 .footer {
@@ -446,8 +676,101 @@ body {
     cursor: pointer;
     display: none;
 }
+
+footer {
+    width: 100%;
+    background-color: #30B0C7;
+    margin-top: 10rem;
+}
+
+.container-footer {
+    padding: 32px 110px 32px 110px;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo-footer {
+    color: white;
+    font-size: 25px;
+    font-family: 'Poppins-Medium';
+}
+
+.desk-footer {
+    font-family: 'Poppins-Light';
+    max-width: 448px;
+    margin: 0 auto;
+    margin-top: 15px;
+    color: white;
+    font-size: 15px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.button {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    border: 1px solid white;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: white;
+    color: #30B0C7;
+}
+
+hr {
+    margin: 40px 0;
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+   opacity: 0.8;
+}
+
+
 /* Mobile Responsive Navbar */
-@media only screen and (max-width: 575px){
+@media only screen and (max-width: 640px){
     body{
         overflow-x: hidden;
     }
@@ -491,34 +814,46 @@ body {
     }
 
     .judul-text1{
-        width: 50%;
-        height: 40vh;
+        width: 80%;
+        margin: 0 auto;
     }
 
     .hero-content {
+        margin: 14rem auto -14rem auto ;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        width: 100%;
+        max-width: 100%;
     }
+
+    .hero-content h1 {
+        font-size: 40px;
+        text-align: center;
+        line-height: 55px;
+    }
+
     .hero-content p {
-        flex: 1;
-        min-width: 300px;
+        font-size: 14px;
+        min-width: 400px;
+        margin: -75px 60px 0 60px;
     }
     
     .buttons{
-        height: 10vh;
         display: flex;
-        margin-top: 300px;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: -190px;
     }
 
     .primary-btn{
-        height: 15vh;
-        width: 25vw;
+        width: 150px;
+        height: 50px;
+        font-size: 14px;
     }
     .secondary-btn{
-        height: 15vh;
-        width: 25vw;
+        width: 160px;
+        height: 50px;
+        font-size: 14px;
     }
 
     .brand-logos{
@@ -529,10 +864,12 @@ body {
         transition: transform 0.3s ease-in-out;
     }
     .hero {
+        padding: 0px;
+        margin-top: 10px;
         display: grid;
         grid-template-areas: 
-            "text"
-            "image";
+            "image"
+            "text";
         text-align: center;
     }
     
@@ -541,30 +878,237 @@ body {
     }
     
     .hero-image {
+        margin: 0 auto;
+        margin-left: 10rem;
+        margin-bottom: -50rem;
         grid-area: image;
         width: 80%;
         max-width: 180px;
-        margin-left: 40px;
         margin-top: -110px;
     }
     
-    .brand-logos{
-        margin-top: 700px;
-        .brand-logo {
-            max-width: 100%; /* Supaya tidak lebih besar dari container */
-            height: auto;
-        }
-        
+    .makanan {
+        padding: 0;
+        margin-top: 9rem;
     }
-    .logo-container{
-        overflow: visible; /* Pastikan tidak terpotong */
-        display: flex;
-        justify-content: space-around; /* Menjaga jarak antar brand */
-        align-items: center;
-        flex-wrap: wrap; /* Supaya tidak terpotong jika ukuran terlalu kecil */
-    }
-    .makanan{
 
+    .makanan-text{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .text-makanan-kanan {
+        margin: 0 auto;
+    }
+    .text-makanan-kanan h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .text-makanan-kiri{
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        margin-top: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .image-container {
+        width: 80%;
+    }
+
+    .text-container{
+        width: 100%;
+        text-align: center;
+        margin-top: -20px;
+        margin-left: 0;
+    }
+
+    .text-container h2 {
+        margin-bottom: 10px;
+    }
+
+    .text-container h1 {
+        font-size: 32px;
+    }
+
+    .text-container p {
+        width: 100%;
+        font-size: 14px;
+        padding: 0 80px;
+        text-align: left;
     }
     
+    .penyakit {
+        margin-top: 8rem;
+        padding: 100px 40px;
+    }
+
+    .penyakit1 {
+        border: 1px solid black;
+        border-radius: 15px;
+        display: grid;
+        gap: 0;
+    }
+    .card1 {
+        height: 420px;
+        width: 100%;
+        border: none;
+        border-radius: 0 0 15px 15px;
+    }
+    .card_highlight1 {
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+    }
+    
+    .second-p-penyakit {
+        display: none;
+    }
+
+    .primary-btn-penyakit {
+        margin-top: 15px;
+    }
+
+    .secondary-btn-penyakit {
+        margin-top: 15px;
+    }
+
+    .penyakit2 {
+        border: 1px solid black;
+        border-radius: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+    .card2 {
+        height: 420px;
+        width: 100%;
+        border: none;
+        border-radius: 0 0 15px 15px;
+    }
+    .card_highlight2 {
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+
+    }
+
+    .penyakit3 {
+        border: 1px solid black;
+        border-radius: 15px;
+        display: grid;
+        gap: 0;
+    }
+    .card3 {
+        height: 420px;
+        width: 100%;
+        border: none;
+        border-radius: 0 0 15px 15px;
+    }
+    .card_highlight3 {
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .olahraga {
+        padding: 0;
+        margin-top: 9rem;
+    }
+
+    .background-olahraga {
+        width: 200%;
+        margin-top: 105rem;
+        margin-left: -15rem;
+    }
+
+    .text-olahraga-kanan {
+        margin: 0 auto;
+    }
+    .text-olahraga-kanan h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .text-olahraga-kiri{
+        display: none;
+    }
+
+    .blog-container {
+        display: grid;
+        margin-top: 40px;
+        justify-content: none;
+    }
+
+    .blog-card {
+        text-align: left;
+        padding: 40px;
+        margin-bottom: 5px;
+    }
+
+    .blog-card img {
+        width: 420px;
+        height: 350px;
+    }
+
+    .tags {
+        padding: 0;
+    }
+
+    .blog-card h3 {
+        font-size: 28px;
+    }
+
+    .container-footer {
+        padding: 35px 50px 35px 50px;
+    }
+
+    .footer-bottom {
+        display: grid;
+        text-align: center;
+    }
 }
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(70px);
+        visibility: visible;
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+    }
+  }
+
+  @keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-70px);
+        visibility: visible;
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        visibility: visible;
+    }
+  }
+
+  @keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(70px);
+        visibility: visible;
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        visibility: visible;
+    }
+  }
