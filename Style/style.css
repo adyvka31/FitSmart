@@ -228,8 +228,15 @@ body {
     justify-content: space-between;
 }
 
+.text-makanan-kanan {
+    width: 65%;
+}
+.text-makanan-kiri {
+    width: 45%;
+}
+
 .text-makanan-kanan h1 {
-    text-align: right;
+    text-align: left;
     font-family: 'Poppins-Medium';
     font-stretch: extra-expanded;
     font-size: 50px;
@@ -243,8 +250,6 @@ body {
 }
 
 .text-makanan-kiri p {
-    width: 75%;
-    margin: auto;
     text-align: right;
     font-family: 'Poppins-Light';
     font-size: 15px;
@@ -530,8 +535,15 @@ body {
     justify-content: space-between;
 }
 
+.text-olahraga-kanan {
+    width: 65%;
+}
+.text-olahraga-kiri {
+    width: 35%;
+}
+
 .text-olahraga-kanan h1 {
-    text-align: right;
+    text-align: left;
     font-family: 'Poppins-Medium';
     font-stretch: extra-expanded;
     font-size: 50px;
@@ -545,7 +557,6 @@ body {
 }
 
 .text-olahraga-kiri p {
-    width: 75%;
     margin: auto;
     text-align: right;
     font-family: 'Poppins-Light';
@@ -573,15 +584,46 @@ body {
     text-align: left;
 }
 
-.blog-card img {
+.olahraga-img1 {
     width: 370px;
     height: 340px;
     border-radius: 10px;
+    background-image: url('../Images/olahraga1.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+    animation: fadeInLeft linear;
+    transition: 0.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.olahraga-img2 {
+    width: 370px;
+    height: 340px;
+    border-radius: 10px;
+    background-image: url('../Images/olahraga2.jpg');
+    background-size: cover;
+    background-position: center;
     border: 2px solid black;
     transition: 0.2s;
     animation: fadeInUp linear;
     animation-timeline: view();
     animation-range: entry 0% cover 20%;
+}
+
+.olahraga-img3 {
+    width: 370px;
+    height: 340px;
+    border-radius: 10px;
+    background-image: url('../Images/olahraga3.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+    animation: fadeInRight linear;
+    transition: 0.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
 
 .blog-card img:hover {
@@ -591,7 +633,7 @@ body {
 .tags {
     display: flex;
     gap: 10px;
-    margin: 10px 0;
+    margin-top: 15px;
     animation: fadeInUp linear;
     transition: 2s ease-in-out;
     animation-timeline: view();
@@ -601,8 +643,8 @@ body {
 .tag {
     border: 1px solid #30B0C7;
     padding: 5px 12px;
+    margin-top: 15px;
     border-radius: 20px;
-    margin-top: 10px;
     font-size: 12px;
     color: #30B0C7;
     transition: 0.2s;
@@ -768,12 +810,13 @@ hr {
    opacity: 0.8;
 }
 
-
 /* Mobile Responsive Navbar */
-@media only screen and (max-width: 640px){
+
+@media (max-width: 400px){
     body{
         overflow-x: hidden;
     }
+
     .menu-bar{
         display: block;
     }
@@ -813,9 +856,388 @@ hr {
         margin: 30px auto;
     }
 
-    .judul-text1{
-        width: 80%;
+    .hero {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-content {
+        margin: 11rem auto -11rem auto ;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 85%;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    .hero-content p {
+        font-size: 12px;
+        min-width: 0;
+        margin: -90px 0 0 0;
+    }
+    
+    .buttons{
+        display: flex;
+        align-items: center;
         margin: 0 auto;
+        margin-top: -240px;
+    }
+
+    .primary-btn{
+        width: 140px;
+        height: 45px;
+        font-size: 12px;
+    }
+    .secondary-btn{
+        width: 140px;
+        height: 45px;
+        font-size: 12px;
+    }
+
+    .brand-logos{
+        margin-top: 40%;
+    }
+    .hero-image{
+        transform: scale(2.4); /* Perbesar 1.5x */
+        transition: transform 0.3s ease-in-out;
+    }
+    .hero {
+        padding: 0px;
+        margin-top: 10px;
+        display: grid;
+        grid-template-areas: 
+            "image"
+            "text";
+        text-align: center;
+    }
+    
+    .hero-content {
+        grid-area: text;
+    }
+    
+    .hero-image {
+        margin: 0 auto;
+        margin-bottom: -50rem;
+        grid-area: image;
+        width: 80%;
+        max-width: 150px;
+        margin-top: -110px;
+    }
+    
+    .makanan {
+        padding: 0;
+        margin-top: 7rem;
+    }
+
+    .makanan-text{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .text-makanan-kanan {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .text-makanan-kanan h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .text-makanan-kiri{
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        margin-top: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .image-container {
+        width: 90%;
+    }
+
+    .text-container{
+        width: 100%;
+        text-align: center;
+        margin-top: -20px;
+        margin-left: 0;
+    }
+
+    .text-container h2 {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .text-container h1 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .text-container p {
+        width: 100%;
+        font-size: 12px;
+        padding: 0 50px;
+        text-align: left;
+    }
+
+    .primary-btn-makanan {
+        width: 140px;
+        height: 45px;
+        font-size: 12px;
+    }
+    
+    .penyakit {
+        margin-top: 6rem;
+        padding: 80px 30px;
+    }
+
+    .bakcgound-penyakit {
+        margin-top: -80px;
+    }
+
+    .penyakit1 {
+        border: 1px solid black;
+        border-radius: 15px;
+        display: grid;
+        gap: 0;
+    }
+    .card1 {
+        height: auto;
+        width: 100%;
+        padding: 25px 20px;
+        border: none;
+        border-radius: 0 0 15px 15px;
+    }
+    .card1 h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+    .card1 p {
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+    }
+    .card_highlight1 {
+        height: 300px;
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+    }
+    
+    .second-p-penyakit {
+        display: none;
+    }
+
+    .primary-btn-penyakit {
+        margin-top: 15px;
+        width: 100%;
+        height: 45px;
+        font-size: 12px;
+    }
+
+    .secondary-btn-penyakit {
+        margin-top: 15px;
+        width: 100%;
+        height: 45px;
+        font-size: 12px;
+    }
+
+    .penyakit2 {
+        border: 1px solid black;
+        border-radius: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+    .card2 {
+        height: auto;
+        width: 100%;
+        padding: 25px 20px;
+        border: none;
+        border-radius: 0 0 15px 15px;
+    }
+    .card2 h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+    .card2 p {
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+    }
+    .card_highlight2 {
+        height: 300px;
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .penyakit3 {
+        border: 1px solid black;
+        border-radius: 15px;
+        display: grid;
+        gap: 0;
+    }
+    .card3 {
+        height: auto;
+        width: 100%;
+        padding: 25px 20px;
+        border: none;
+        border-radius: 0 0 15px 15px;
+    }
+    .card3 h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+    .card3 p {
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+    }
+    .card_highlight3 {
+        height: 300px;
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .olahraga {
+        padding: 0;
+        margin-top: 7rem;
+    }
+
+    .background-olahraga {
+        width: 250%;
+        margin-top: 92rem;
+        margin-left: -15rem;
+    }
+
+    .text-olahraga-kanan {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .text-olahraga-kanan h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .text-olahraga-kiri{
+        display: none;
+    }
+
+    .blog-container {
+        display: grid;
+        margin-top: 20px;
+        justify-content: none;
+    }
+
+    .blog-card {
+        text-align: left;
+        padding: 30px;
+        margin-bottom: 5px;
+    }
+
+    .olahraga-img1, .olahraga-img2, .olahraga-img3 {
+        width: auto;
+        height: 300px;
+    }
+
+    .tags {
+        padding: 0;
+    }
+
+    .blog-card h3 {
+        font-size: 22px;
+    }
+    .blog-card p {
+        font-size: 12px;
+    }
+
+    .primary-btn-aktifitas {
+        background-color: #30B0C7;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-right: 20px;
+        position: relative;
+        box-shadow: 4px 4px 0px black;
+    }
+    
+    .primary-btn-aktifitas:hover {
+        background-color: #2480aa;
+        box-shadow: none;
+    }
+
+    .footer {
+        margin-top: 1rem;
+    }
+
+    .container-footer {
+        padding: 35px 50px 35px 50px;
+    }
+
+    .footer-bottom {
+        display: grid;
+        text-align: center;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 650px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .menu-bar{
+        display: block;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 70vh;
+        justify-content: center;
+        margin-top: -105%;
+        transition: all 0.5s ease;
+    }
+    .auth-buttons {
+        position: absolute;
+        top: 65%;
+        left: 51%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -170%;
+        transition: all 0.5s ease;
+    }
+    
+    .mobile-menu{
+        margin-top: 0;
+    }
+
+    .nav-links li{
+        margin: 30px auto;
+    }
+
+    .hero {
+        align-items: center;
+        justify-content: center;
     }
 
     .hero-content {
@@ -882,7 +1304,6 @@ hr {
         margin-left: 10rem;
         margin-bottom: -50rem;
         grid-area: image;
-        width: 80%;
         max-width: 180px;
         margin-top: -110px;
     }
@@ -898,6 +1319,7 @@ hr {
     }
 
     .text-makanan-kanan {
+        width: 100%;
         margin: 0 auto;
     }
     .text-makanan-kanan h1 {
@@ -954,13 +1376,14 @@ hr {
         gap: 0;
     }
     .card1 {
-        height: 420px;
+        height: auto;
         width: 100%;
         border: none;
         border-radius: 0 0 15px 15px;
     }
     .card_highlight1 {
         width: 100%;
+        height: 350px;
         border-radius: 15px 15px 0 0;
     }
     
@@ -969,10 +1392,12 @@ hr {
     }
 
     .primary-btn-penyakit {
+        width: 100%;
         margin-top: 15px;
     }
 
     .secondary-btn-penyakit {
+        width: 100%;
         margin-top: 15px;
     }
 
@@ -985,13 +1410,14 @@ hr {
         gap: 0;
     }
     .card2 {
-        height: 420px;
+        height: auto;
         width: 100%;
         border: none;
         border-radius: 0 0 15px 15px;
     }
     .card_highlight2 {
         width: 100%;
+        height: 350px;
         border-radius: 15px 15px 0 0;
 
     }
@@ -1003,13 +1429,14 @@ hr {
         gap: 0;
     }
     .card3 {
-        height: 420px;
+        height: auto;
         width: 100%;
         border: none;
         border-radius: 0 0 15px 15px;
     }
     .card_highlight3 {
         width: 100%;
+        height: 350px;
         border-radius: 15px 15px 0 0;
     }
 
@@ -1025,6 +1452,7 @@ hr {
     }
 
     .text-olahraga-kanan {
+        width: 90%;
         margin: 0 auto;
     }
     .text-olahraga-kanan h1 {
@@ -1048,8 +1476,8 @@ hr {
         margin-bottom: 5px;
     }
 
-    .blog-card img {
-        width: 420px;
+    .olahraga-img1, .olahraga-img2, .olahraga-img3 {
+        width: auto;
         height: 350px;
     }
 
@@ -1070,6 +1498,344 @@ hr {
         text-align: center;
     }
 }
+
+@media (min-width: 650px) and (max-width: 1000px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .menu-bar{
+        display: block;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 70vh;
+        justify-content: center;
+        margin-top: -105%;
+        transition: all 0.5s ease;
+    }
+    .auth-buttons {
+        position: absolute;
+        top: 65%;
+        left: 51%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -170%;
+        transition: all 0.5s ease;
+    }
+    
+    .mobile-menu{
+        margin-top: 0;
+    }
+
+    .nav-links li{
+        margin: 30px auto;
+    }
+
+    .hero {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-content {
+        margin: 14rem auto -14rem auto ;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        width: 70%;
+        margin: 0 auto;
+        font-size: 50px;
+        text-align: center;
+        line-height: 55px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+        min-width: 400px;
+        margin: -75px 100px 0 100px;
+    }
+    
+    .buttons{
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: -190px;
+    }
+
+    .primary-btn{
+        width: 150px;
+        height: 50px;
+        font-size: 14px;
+    }
+    .secondary-btn{
+        width: 160px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .brand-logos{
+        margin-top: 30%;
+    }
+    .hero-image{
+        transform: scale(2.4); /* Perbesar 1.5x */
+        transition: transform 0.3s ease-in-out;
+    }
+    .hero {
+        padding: 0px;
+        margin-top: 10px;
+        display: grid;
+        grid-template-areas: 
+            "image"
+            "text";
+        text-align: center;
+    }
+    
+    .hero-content {
+        grid-area: text;
+    }
+    
+    .hero-image {
+        margin: 0 auto;
+        margin-bottom: -50rem;
+        grid-area: image;
+        max-width:200px;
+        margin-top: -110px;
+    }
+    
+    .makanan {
+        padding: 0;
+        margin-top: 9rem;
+    }
+
+    .makanan-text{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .text-makanan-kanan {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .text-makanan-kanan h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .text-makanan-kiri{
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        margin-top: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .image-container {
+        width: 80%;
+    }
+
+    .text-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0 70px;
+        margin-top: -20px;
+        margin-left: 0;
+        gap: 60px;
+    }
+
+    .makanan-title-1 {
+        display: grid;
+        align-items: center;
+    }
+    .makanan-title-2 {
+        display: grid;
+    }
+
+    .text-container h2 {
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    .text-container h1 {
+        font-size: 32px;
+        text-align: left;
+    }
+
+    .text-container p {
+        width: 100%;
+        font-size: 14px;
+        text-align: left;
+    }
+    
+    .penyakit {
+        margin-top: 8rem;
+        padding: 100px;
+    }
+
+    .bakcgound-penyakit {
+        margin-left: -150px;
+    }
+
+    .penyakit1 {
+        border: 1px solid black;
+        border-radius: 15px;
+        display: grid;
+        gap: 0;
+    }
+    .card1 {
+        height: auto;
+        padding: 45px 40px;
+        width: 100%;
+        border: none;
+        border-radius: 0 0 15px 15px;
+    }
+    .card_highlight1 {
+        width: 100%;
+        height: 350px;
+        border-radius: 15px 15px 0 0;
+    }
+    
+    .primary-btn-penyakit {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .secondary-btn-penyakit {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .penyakit2 {
+        border: 1px solid black;
+        border-radius: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+    .card2 {
+        height: auto;
+        padding: 45px 40px;
+        width: 100%;
+        border: none;
+        border-radius: 0 0 15px 15px;
+    }
+    .card_highlight2 {
+        width: 100%;
+        height: 350px;
+        border-radius: 15px 15px 0 0;
+
+    }
+
+    .penyakit3 {
+        border: 1px solid black;
+        border-radius: 15px;
+        display: grid;
+        gap: 0;
+    }
+    .card3 {
+        height: auto;
+        padding: 45px 40px;
+        width: 100%;
+        border: none;
+        border-radius: 0 0 15px 15px;
+    }
+    .card_highlight3 {
+        width: 100%;
+        height: 350px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .olahraga {
+        padding: 0;
+        margin-top: 9rem;
+    }
+
+    .background-olahraga {
+        width: 200%;
+        margin-top: 105rem;
+        margin-left: -15rem;
+    }
+
+    .text-olahraga-kanan {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .text-olahraga-kanan h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .text-olahraga-kiri{
+        display: none;
+    }
+
+    .blog-container {
+        display: grid;
+        margin-top: 40px;
+        justify-content: none;
+    }
+
+    .background-olahraga {
+        width: 130%;
+        margin-left: -9rem;
+        margin-top: 110rem;
+    }
+
+    .blog-card {
+        text-align: left;
+        padding: 40px 100px;
+    }
+
+    .olahraga-img1, .olahraga-img2, .olahraga-img3 {
+        width: auto;
+        height: 350px;
+    }
+
+    .tags {
+        padding: 0;
+    }
+
+    .blog-card h3 {
+        font-size: 28px;
+    }
+
+    .container-footer {
+        padding: 35px 50px 35px 50px;
+    }
+
+    .footer-bottom {
+        display: grid;
+        text-align: center;
+        justify-content: center;
+    }
+    .footer-bottom p {
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+}
+
 
 @keyframes fadeInUp {
     0% {
