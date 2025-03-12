@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitSmart - Edukasi Kesehatan</title>
     <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 </head>
 <body>
     <nav class="navbar">
@@ -15,26 +17,45 @@
             <li><a href="#">Aktifitas</a></li>
             <li><a href="#">Penyakit</a></li>
         </ul>
-        <img src="../images/fe_bar.png"  class="menu-bar">
-        <div class="auth-buttons">
+        <div class="toggle-btn">
+            <i class="fa-solid fa-bars" style="font-size: 23px;"></i>
+        </div>
+        <div class="auth-buttonbuttons">
             <button type="button" class="btn-masuk">Masuk</button>
             <button type="button" class="btn-daftar">Daftar</button>
         </div>
-        
-       
+        <ul class="dropdown-menu">
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Konsumsi</a></li>
+            <li><a href="#">Aktifitas</a></li>
+            <li><a href="#">Penyakit</a></li>
+            <li class="button2"><a href="#">
+                <button type="button" class="btn-masuk">Masuk</button>
+                <button type="button" class="btn-daftar">Daftar</button>
+            </a></li>
+        </ul>
+        <script>
+            const toggleBtn = document.querySelector('.toggle-btn');
+            const toggleBtnIcon = document.querySelector('.toggle-btn i'); // Ikon di dalamnya
+            const dropDownMenu = document.querySelector('.dropdown-menu');
+
+            toggleBtn.addEventListener("click", function () {
+                // Toggle class "open" untuk menampilkan atau menyembunyikan dropdown
+                dropDownMenu.classList.toggle('open');
+
+                // Deklarasikan isOpen dalam fungsi ini agar tidak undefined
+                let isOpen = dropDownMenu.classList.contains('open');
+
+                // Ganti ikon FontAwesome
+                toggleBtnIcon.className = isOpen
+                    ? 'fa-solid fa-xmark'
+                    : 'fa-solid fa-bars';
+            });
+        </script>
     </nav>
 
-    <script>
-        const menuBtn = document.querySelector('.menu-bar')
-        const navLinks = document.querySelector('.nav-links')
-        const authButtons = document.querySelector('.auth-buttons')
 
-        menuBtn.addEventListener('click',()=>{
-            navLinks.classList.toggle('mobile-menu')
-            authButtons.classList.toggle('mobile-menu')
-        })
-        
-    </script>
+
 
     <section class="hero">
         <div class="hero-content">
