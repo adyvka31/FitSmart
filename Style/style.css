@@ -20,10 +20,12 @@
     box-sizing: border-box;
     font-family: 'Poppins';
 }
+html, body {
+    overflow-x: hidden;
+}
 
 body {
     background-color: #f8f9fa;
-    overflow-x: hidden;
 }
 
 .navbar {
@@ -365,6 +367,7 @@ body {
 }
 
 .bakcgound-penyakit {
+    max-width: 100vw;
     position: absolute;
     margin-top: -100px;
     margin-left: -100px;
@@ -528,7 +531,7 @@ body {
 }
 
 .background-olahraga {
-    width: 100%;
+    max-width: 100vw;
     position: absolute;
     z-index: -1;
     margin-top: 6rem;
@@ -1051,7 +1054,7 @@ hr {
     }
 
     .bakcgound-penyakit {
-        margin-top: -80px;
+        display: none;
     }
 
     .penyakit1 {
@@ -1164,9 +1167,7 @@ hr {
     }
 
     .background-olahraga {
-        width: 250%;
-        margin-top: 97rem;
-        margin-left: -15rem;
+        display: none;
     }
 
     .text-olahraga-kanan {
@@ -1558,9 +1559,7 @@ hr {
     }
 
     .background-olahraga {
-        width: 200%;
-        margin-top: 122rem;
-        margin-left: -15rem;
+        display: none;
     }
 
     .text-olahraga-kanan {
@@ -1856,7 +1855,7 @@ hr {
     }
 
     .bakcgound-penyakit {
-        margin-left: -150px;
+        display: none;
     }
 
     .penyakit1 {
@@ -1935,7 +1934,8 @@ hr {
     }
 
     .background-olahraga {
-        width: 200%;
+        display: none;
+        max-width: 100vw;
         margin-top: 105rem;
         margin-left: -15rem;
     }
@@ -1960,7 +1960,8 @@ hr {
     }
 
     .background-olahraga {
-        width: 130%;
+        display: none;
+        max-width: 100vw;
         margin-left: -9rem;
         margin-top: 112rem;
     }
