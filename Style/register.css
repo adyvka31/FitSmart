@@ -1,3 +1,23 @@
+@font-face 
+{
+  font-family: 'Poppins-Light';
+  src: url('../Font/Poppins-Light.ttf');
+}
+@font-face 
+{
+  font-family: 'Poppins';
+  src: url('../Font/Poppins-Regular.ttf');
+}
+@font-face 
+{
+  font-family: 'Poppins-Medium';
+  src: url('../Font/Poppins-Medium.ttf');
+}
+
+* {
+    font-family: 'Poppins';
+}
+
 body {
     background-color: #f3f4f6;
     display: flex;
@@ -5,12 +25,10 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
 }
 
 .login-container {
     display: flex;
-    flex-direction: row-reverse; /* 🚀 Membalik posisi box */
     background-color: white;
     width: 87%;
     height: 87%;
@@ -32,6 +50,7 @@ body {
 }
 
 .title {
+    font-family: 'Poppins-Medium';
     font-size: 35px;
     font-weight: bold;
     color: black;
