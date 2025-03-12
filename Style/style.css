@@ -598,10 +598,14 @@ body {
     background-size: cover;
     background-position: center;
     border: 2px solid black;
+    box-shadow: none;
     animation: fadeInLeft linear;
     transition: 0.3s ease-in-out;
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
+}
+.olahraga-img1:hover {
+    box-shadow: 5px 5px 0px black;
 }
 
 .olahraga-img2 {
@@ -611,11 +615,15 @@ body {
     background-image: url('../Images/olahraga2.jpg');
     background-size: cover;
     background-position: center;
+    box-shadow: none;
     border: 2px solid black;
     transition: 0.2s;
     animation: fadeInUp linear;
     animation-timeline: view();
     animation-range: entry 0% cover 20%;
+}
+.olahraga-img2:hover {
+    box-shadow: 5px 5px 0px black;
 }
 
 .olahraga-img3 {
@@ -626,10 +634,14 @@ body {
     background-size: cover;
     background-position: center;
     border: 2px solid black;
+    box-shadow: none;
     animation: fadeInRight linear;
     transition: 0.3s ease-in-out;
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
+}
+.olahraga-img3:hover {
+    box-shadow: 5px 5px 0px black;
 }
 
 .blog-card img:hover {
