@@ -531,6 +531,7 @@ body {
     width: 100%;
     position: absolute;
     z-index: -1;
+    margin-top: 6rem;
     margin-left: -7rem;
 }
 
@@ -2022,6 +2023,82 @@ hr {
     }
     .dropdown-menu {
         display: block;
+    }
+}
+@media (min-width: 1000px) and (max-width: 1300px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .hero {
+        margin-top: -4rem;
+    }
+
+    .hero-content h1 {
+        font-size: 55px;
+    }
+    .hero-content p {
+        font-size: 14.5px;
+    }
+
+    .makanan {
+        margin-top: 7rem;
+    }
+
+    .text-makanan-kanan h1 {
+        font-size: 45px;
+        line-height: 60px;
+    }
+    .text-makanan-kiri p {
+        font-size: 14.5px;
+        margin-top: 40px;
+    }
+
+    .container {
+        margin-top: 110px;
+    }
+
+    .penyakit {
+        margin-top: 7rem;
+    }
+
+    .card1, .card2, .card3 {
+        height: auto;
+    }
+
+    .card1 h1, .card2 h1, .card3 h1 {
+        font-size: 31px;
+    }
+    .card1 p, .card2 p, .card3 p {
+        font-size: 14.5px;
+    }
+    .second-p-penyakit {
+        display: none;
+    }
+
+    .primary-btn-penyakit {
+        width: 100%;
+        font-size: 14.5px;
+    }
+    .secondary-btn-penyakit {
+        width: 100%;
+        margin-top: 15px;
+        font-size: 14.5px;
+    }
+
+    .olahraga {
+        margin-top: 7rem;
+    }
+
+    .background-olahraga {
+        margin-top: 18rem;
+    }
+
+    .text-olahraga-kanan h1 {
+        font-size: 45px;
+    }
+    .text-olahraga-kiri p {
+        font-size: 14.5px;
     }
 }
 
