@@ -365,6 +365,7 @@ body {
 }
 
 .bakcgound-penyakit {
+    max-width: 100vw;
     position: absolute;
     margin-top: -100px;
     margin-left: -100px;
@@ -528,9 +529,10 @@ body {
 }
 
 .background-olahraga {
-    width: 100%;
+    max-width: 100vw;
     position: absolute;
     z-index: -1;
+    margin-top: 6rem;
     margin-left: -7rem;
 }
 
@@ -596,10 +598,14 @@ body {
     background-size: cover;
     background-position: center;
     border: 2px solid black;
+    box-shadow: none;
     animation: fadeInLeft linear;
     transition: 0.3s ease-in-out;
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
+}
+.olahraga-img1:hover {
+    box-shadow: 5px 5px 0px black;
 }
 
 .olahraga-img2 {
@@ -609,11 +615,15 @@ body {
     background-image: url('../Images/olahraga2.jpg');
     background-size: cover;
     background-position: center;
+    box-shadow: none;
     border: 2px solid black;
     transition: 0.2s;
     animation: fadeInUp linear;
     animation-timeline: view();
     animation-range: entry 0% cover 20%;
+}
+.olahraga-img2:hover {
+    box-shadow: 5px 5px 0px black;
 }
 
 .olahraga-img3 {
@@ -624,10 +634,14 @@ body {
     background-size: cover;
     background-position: center;
     border: 2px solid black;
+    box-shadow: none;
     animation: fadeInRight linear;
     transition: 0.3s ease-in-out;
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
+}
+.olahraga-img3:hover {
+    box-shadow: 5px 5px 0px black;
 }
 
 .blog-card img:hover {
@@ -884,7 +898,7 @@ hr {
         visibility: visible;
         height: 320px;
         border-radius: 20px;
-        box-shadow: 2px 5px 5px rgb(134, 134, 134);
+        border: 1px solid black;
     }
     
     .auth-buttons {
@@ -1050,7 +1064,7 @@ hr {
     }
 
     .bakcgound-penyakit {
-        margin-top: -80px;
+        display: none;
     }
 
     .penyakit1 {
@@ -1163,9 +1177,7 @@ hr {
     }
 
     .background-olahraga {
-        width: 250%;
-        margin-top: 97rem;
-        margin-left: -15rem;
+        display: none;
     }
 
     .text-olahraga-kanan {
@@ -1313,7 +1325,7 @@ hr {
         visibility: visible;
         height: 320px;
         border-radius: 20px;
-        box-shadow: 2px 5px 5px rgb(134, 134, 134);
+        border: 1px solid black;
     }
     .auth-buttonbuttons {
         display: none;
@@ -1557,9 +1569,7 @@ hr {
     }
 
     .background-olahraga {
-        width: 200%;
-        margin-top: 122rem;
-        margin-left: -15rem;
+        display: none;
     }
 
     .text-olahraga-kanan {
@@ -1685,7 +1695,7 @@ hr {
         visibility: visible;
         height: 320px;
         border-radius: 20px;
-        box-shadow: 2px 5px 5px rgb(134, 134, 134);
+        border: 1px solid black;
     }
     .auth-buttons {
         position: absolute;
@@ -1855,7 +1865,7 @@ hr {
     }
 
     .bakcgound-penyakit {
-        margin-left: -150px;
+        display: none;
     }
 
     .penyakit1 {
@@ -1934,7 +1944,8 @@ hr {
     }
 
     .background-olahraga {
-        width: 200%;
+        display: none;
+        max-width: 100vw;
         margin-top: 105rem;
         margin-left: -15rem;
     }
@@ -1959,7 +1970,8 @@ hr {
     }
 
     .background-olahraga {
-        width: 130%;
+        display: none;
+        max-width: 100vw;
         margin-left: -9rem;
         margin-top: 112rem;
     }
@@ -2022,6 +2034,82 @@ hr {
     }
     .dropdown-menu {
         display: block;
+    }
+}
+@media (min-width: 1000px) and (max-width: 1300px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .hero {
+        margin-top: -4rem;
+    }
+
+    .hero-content h1 {
+        font-size: 55px;
+    }
+    .hero-content p {
+        font-size: 14.5px;
+    }
+
+    .makanan {
+        margin-top: 7rem;
+    }
+
+    .text-makanan-kanan h1 {
+        font-size: 45px;
+        line-height: 60px;
+    }
+    .text-makanan-kiri p {
+        font-size: 14.5px;
+        margin-top: 40px;
+    }
+
+    .container {
+        margin-top: 110px;
+    }
+
+    .penyakit {
+        margin-top: 7rem;
+    }
+
+    .card1, .card2, .card3 {
+        height: auto;
+    }
+
+    .card1 h1, .card2 h1, .card3 h1 {
+        font-size: 31px;
+    }
+    .card1 p, .card2 p, .card3 p {
+        font-size: 14.5px;
+    }
+    .second-p-penyakit {
+        display: none;
+    }
+
+    .primary-btn-penyakit {
+        width: 100%;
+        font-size: 14.5px;
+    }
+    .secondary-btn-penyakit {
+        width: 100%;
+        margin-top: 15px;
+        font-size: 14.5px;
+    }
+
+    .olahraga {
+        margin-top: 7rem;
+    }
+
+    .background-olahraga {
+        margin-top: 18rem;
+    }
+
+    .text-olahraga-kanan h1 {
+        font-size: 45px;
+    }
+    .text-olahraga-kiri p {
+        font-size: 14.5px;
     }
 }
 

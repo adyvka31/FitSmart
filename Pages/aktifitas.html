@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aktifitas | FitSmart</title>
+    <link rel="stylesheet" href="../Style/aktifitas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">LOGO</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="konsumsi.html">Konsumsi</a></li>
+            <li><a href="aktifitas.html">Aktifitas</a></li>
+            <li><a href="penyakit.html">Penyakit</a></li>
+        </ul>
+        <div class="toggle-btn">
+            <i class="fa-solid fa-bars" style="font-size: 23px;"></i>
+        </div>
+        <div class="auth-buttons">
+            <a href="login.html">
+                <button type="button" class="btn-masuk">Masuk</button>
+            </a>
+            <a href="register.html">
+                <button type="button" class="btn-daftar">Daftar</button>
+            </a>
+        </div>
+        <ul class="dropdown-menu">
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Konsumsi</a></li>
+            <li><a href="#">Aktifitas</a></li>
+            <li><a href="#">Penyakit</a></li>
+            <li class="button2"><a href="#">
+                <button type="button" class="btn-masuk">Masuk</button>
+                <button type="button" class="btn-daftar">Daftar</button>
+            </a></li>
+        </ul>
+        <script>
+            const toggleBtn = document.querySelector('.toggle-btn');
+            const toggleBtnIcon = document.querySelector('.toggle-btn i'); // Ikon di dalamnya
+            const dropDownMenu = document.querySelector('.dropdown-menu');
+
+            toggleBtn.addEventListener("click", function () {
+                // Toggle class "open" untuk menampilkan atau menyembunyikan dropdown
+                dropDownMenu.classList.toggle('open');
+
+                // Deklarasikan isOpen dalam fungsi ini agar tidak undefined
+                let isOpen = dropDownMenu.classList.contains('open');
+
+                // Ganti ikon FontAwesome
+                toggleBtnIcon.className = isOpen
+                    ? 'fa-solid fa-xmark'
+                    : 'fa-solid fa-bars';
+            });
+        </script>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2 class="tag-text">MENJAGA KESEHATAN UNTUK HIDUP LEBIH BAIK</h2>
+            <p style="position: absolute; font-size: 55px; margin-top: -5rem;" class="emote">🚴🏻‍♂️</p>
+            <p style="position: absolute; font-size: 55px; margin-top: 9rem; margin-left: 45rem;" class="emote">🏋🏻‍♂️</p>
+            <h1 class="judul-text1">Sehat Dengan Aktifitas</h1>
+            <p class="deskripsi">Rutin berolahraga menjaga tubuh tetap bugar dan sehat, meningkatkan daya tahan serta kebugaran fisik. Temukan berbagai aktivitas yang cocok untuk gaya hidup sehatmu! Mulai langkah kecil hari ini untuk kesehatan yang lebih baik! </p>
+            
+            <div class="buttons">
+                <a href="#aktifitas">
+                <button class="primary-btn">Pelajari Lebih →</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+        </div>
+    </section>
+
+    <section class="aktifitas" id="aktifitas">
+        <div class="blog-aktifitas1">
+            <div class="gambar-aktifitas1"></div>
+            <div class="text-aktifitas">
+                <h2>OLAHRAGA SEHAT</h2>
+                <h1>Bola Basket</h1>
+                <div class="tags">
+                    <div class="tag">Membakar Kalori</div>
+                    <div class="tag">Meningkatkan Kelincahan Tangan</div>
+                </div>
+                <div class="paragraf">
+                    <p>Bermain basket adalah olahraga yang menyenangkan dan memiliki banyak manfaat bagi kesehatan fisik, mental, dan sosial. dan baik untuk penyakit apa saja ya? :</p>
+                    <p style="font-family: 'Poppins-Medium'; margin-top: 15px;">1. Penyakit Jantung dan Pembuluh Darah <br>
+                    2. Diabetes Tipe 2 <br>
+                    3. Obesitas</p>
+                </div>
+                <button class="primary-btn-aktifitas" onclick="openPopup()">Pelajari Lebih →</button>
+            </div>
+            <div id="popup" class="popup" style="display: none;">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup()">&times;</span>
+                    <div class="popup_highlight1"></div>
+                    <h2>Bola Basket</h2>
+                    <p>Basket adalah olahraga tim yang dimainkan oleh dua regu dengan masing-masing lima pemain. Tujuan utama dari permainan ini adalah mencetak poin dengan memasukkan bola ke dalam ring lawan. Basket dikenal sebagai olahraga yang cepat dan dinamis karena melibatkan kombinasi keterampilan seperti dribbling, passing, shooting, dan bertahan. <br> <br>
+
+                        Olahraga ini tidak hanya menyenangkan tetapi juga memberikan banyak manfaat bagi kesehatan fisik dan mental. Bermain basket secara rutin dapat membantu meningkatkan daya tahan tubuh, memperkuat otot, serta melatih koordinasi dan keseimbangan. Selain itu, basket juga memiliki peran dalam meningkatkan kemampuan sosial dan kerja sama tim, karena membutuhkan komunikasi yang baik antar pemain. <br> <br>
+
+                        Manfaat Bermain Basket <br> <br>
+                        Meningkatkan Kesehatan Jantung – Gerakan aktif dalam basket membantu meningkatkan sirkulasi darah dan menjaga kesehatan jantung. <br> <br>
+                        Melatih Keseimbangan dan Koordinasi – Dribbling dan shooting memerlukan kontrol tubuh yang baik, sehingga meningkatkan keseimbangan dan koordinasi motorik. <br> <br>
+                        Membantu Menurunkan Berat Badan – Aktivitas yang intens dalam permainan basket membakar banyak kalori dan membantu menjaga berat badan ideal. <br> <br>
+                        Basket juga merupakan olahraga yang dapat dimainkan di berbagai tingkat keahlian, dari pemula hingga profesional. Selain itu, banyak turnamen dan kompetisi yang dapat diikuti untuk mengasah kemampuan serta mempererat persahabatan di antara para pemain.
+                        </p>
+                </div>
+            </div>
+
+            <script>
+                // Function to open popup
+                function openPopup() {
+                    document.getElementById("popup").style.display = "flex";
+                }
+
+                // Function to close popup
+                function closePopup() {
+                    document.getElementById("popup").style.display = "none";
+                }
+            </script>
+        </div>
+        <div class="blog-aktifitas2">
+            <div class="text-aktifitas">
+                <h2>OLAHRAGA SEHAT</h2>
+                <h1>Sepak Bola</h1>
+                <div class="tags">
+                    <div class="tag">Turunkan Berat Badan</div>
+                    <div class="tag">Latihan</div>
+                    <div class="tag">Turunkan Berat Badan</div>
+                </div>
+                <div class="paragraf">
+                    <p>Olahraga ini dapat meningkatkan daya tahan tubuh, melatih koordinasi, serta memperkuat otot dan jantung. Dan baik untuk penyakit apa saja ya? :</p>
+                    <p style="font-family: 'Poppins-Medium'; margin-top: 15px;">1. Osteoarthritis <br>
+                    2. Asma <br>
+                    3. Obesitas</p>
+                </div>
+                <button class="primary-btn-aktifitas">Pelajari Lebih →</button>
+            </div>
+            
+            <div class="gambar-aktifitas2"></div>
+        </div>
+        <div class="blog-aktifitas1">
+            <div class="gambar-aktifitas3"></div>
+            <div class="text-aktifitas">
+                <h2>OLAHRAGA SEHAT</h2>
+                <h1>Bulu Tangkis</h1>
+                <div class="tags">
+                    <div class="tag">Turunkan Berat Badan</div>
+                    <div class="tag">Latihan</div>
+                    <div class="tag">Turunkan Berat Badan</div>
+                </div>
+                <div class="paragraf">
+                    <p>Bulu Tangkis dapat meningkatkan kelincahan, memperkuat otot tubuh, serta melatih daya tahan kardiovaskular. Dan baik untuk penyakit apa saja ya? :</p>
+                    <p style="font-family: 'Poppins-Medium'; margin-top: 15px;">1. Osteoporosis <br>
+                    2. Sindrom Metabolik  <br>
+                    3. Insomnia</p>
+                </div>
+                <button class="primary-btn-aktifitas">Pelajari Lebih →</button>
+            </div>
+        </div>
+        <div class="blog-aktifitas2">
+            <div class="text-aktifitas">
+                <h2>OLAHRAGA SEHAT</h2>
+                <h1>Workout</h1>
+                <div class="tags">
+                    <div class="tag">Turunkan Berat Badan</div>
+                    <div class="tag">Latihan</div>
+                    <div class="tag">Turunkan Berat Badan</div>
+                </div>
+                <div class="paragraf">
+                    <p>Workout adalah aktivitas fisik yang bermanfaat untuk meningkatkan kebugaran tubuh, membangun otot, serta menjaga kesehatan jantung dan metabolisme. Lalu baik untuk penyakit apa saja ya? :</p>
+                    <p style="font-family: 'Poppins-Medium'; margin-top: 15px;">1. Penyakit Jantung dan Pembuluh Darah <br>
+                    2. Diabetes Tipe 2 <br>
+                    3. Obesitas</p>
+                </div>
+                <button class="primary-btn-aktifitas">Pelajari Lebih →</button>
+            </div>
+            <div class="gambar-aktifitas4"></div>
+        </div>
+    </section>
+
+
+    <section class="qna">
+        <div class="container-5">
+            <div class="title">Frequently Asked Questions</div>
+            <div class="tab">
+                <input type="radio" name="acc" id="acc-1">
+                <label for="acc-1">
+                    <h3>Sebutkan Beberapa Aktifitas Olahraga</h3>
+                </label>
+                <div class="content-pertanyaan">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio recusandae eum ducimus error esse molestiae eos nobis veritatis maxime sequi!</p>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="acc" id="acc-2">
+                <label for="acc-2">
+                    <h3>Apa Manfaat Kita Berolahraga?</h3>
+                </label>
+                <div class="content-pertanyaan">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis a, sunt similique tempora cupiditate dignissimos blanditiis officia odio quas provident?</p>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="acc" id="acc-3">
+                <label for="acc-3">
+                    <h3>Apa Dampak Ketika Kita Tidak Pernah Beraktifitas?</h3>
+                </label>
+                <div class="content-pertanyaan">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque ea libero officiis ducimus quis nam iusto quisquam aliquam repudiandae! Mollitia!</p>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="acc" id="acc-4">
+                <label for="acc-4">
+                    <h3>Apa Olarhaga Yang Dapat Dilakukan di Rumah?</h3>
+                </label>
+                <div class="content-pertanyaan">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt ea debitis laborum officia distinctio numquam veniam suscipit iure quibusdam quia!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <img class="background-olahraga" src="../Images/background-olahraga.svg" alt="">
+
+    <h1 class="last-title">Mulai Hidup Sehat Dari Sekarang Demi Masa Depan</h1>
+
+    <footer>
+        <div class="container-footer">
+            <div class="footer-top">
+                <div class="logo-footer">LOGO</div>
+                <p class="desk-footer">Menjaga Kesehatan Indonesia</p>
+
+                <div class="button-container">
+                    <button type="button" class="button">Masuk</button>
+                    <button type="button" class="button">Daftar</button>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="footer-bottom">
+                <p>© FitSmart 2025. Hak Cipta Dilindungi Undang-Undang.</p>
+                <div class="footer-links">
+                    <a href="index.html">Beranda</a>
+                    <a href="konsumsi.html">Konsumsi</a>
+                    <a href="penyakit.html">Penyakit</a>
+                    <a href="aktifitas.html">Aktifitas</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
