@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitSmart - Edukasi Kesehatan</title>
+    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="../Style/konsumsi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">LOGO</div>
+        <ul class="nav-links">
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Konsumsi</a></li>
+            <li><a href="#">Aktifitas</a></li>
+            <li><a href="#">Penyakit</a></li>
+        </ul>
+        <div class="toggle-btn">
+            <i class="fa-solid fa-bars" style="font-size: 23px;"></i>
+        </div>
+        <div class="auth-buttonbuttons">
+            <a href="login.html">
+                <button type="button" class="btn-masuk">Masuk</button>
+            </a>
+            <a href="register.html">
+                <button type="button" class="btn-daftar">Daftar</button>
+            </a>
+        </div>
+        <ul class="dropdown-menu">
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Konsumsi</a></li>
+            <li><a href="#">Aktifitas</a></li>
+            <li><a href="#">Penyakit</a></li>
+            <li class="button2"><a href="#">
+                <button type="button" class="btn-masuk">Masuk</button>
+                <button type="button" class="btn-daftar">Daftar</button>
+            </a></li>
+        </ul>
+        <script>
+            const toggleBtn = document.querySelector('.toggle-btn');
+            const toggleBtnIcon = document.querySelector('.toggle-btn i'); // Ikon di dalamnya
+            const dropDownMenu = document.querySelector('.dropdown-menu');
+
+            toggleBtn.addEventListener("click", function () {
+                // Toggle class "open" untuk menampilkan atau menyembunyikan dropdown
+                dropDownMenu.classList.toggle('open');
+
+                // Deklarasikan isOpen dalam fungsi ini agar tidak undefined
+                let isOpen = dropDownMenu.classList.contains('open');
+
+                // Ganti ikon FontAwesome
+                toggleBtnIcon.className = isOpen
+                    ? 'fa-solid fa-xmark'
+                    : 'fa-solid fa-bars';
+            });
+        </script>
+    </nav>
+
+
+
+
+    <section class="hero">
+        <div class="container-hero">
+            <div class="text">
+                <h2>MENJAGA KESEHATAN UNTUK HIDUP LEBIH BAIK</h2>
+                <h1>Makanan & Minuman Sehat</h1>
+                <p>Silakan berikan deskripsi baru yang ingin Anda gunakan, atau jika ingin saya membantu merangkai kalimat yang lebih menarik, beri tahu saya konsep atau kata kunci yang ingin dimasukkan! 😊</p>
+                <div class="button-text-container">
+                    <button class="button-text">Pelajari Lebih <img src="../images/arrow-right.png" ></button>
+                </div>
+            </div>
+            <div class="buah-asset">
+                <img src="../images/apel.png" class="apel">
+                <img src="../images/asset2.png" class="anggur">
+            </div>
+        </div>
+    </section>
+
+    <section class="sayur">
+        <div class="judul-sayuran">
+            <img src="../images/f51b47dd-4dbf-4740-844a-a4a519fccdf3.svg.png">
+            <h1>Sayur - Sayuran <img src="../images/🥦.png" style="width: 28px;"></h1>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="card">
+                
+                    <div class="text-brokoli">
+                        <h1>Brokoli</h1>
+                        <p>Mengandung serat, kalsium, kalium, folat, dan fitonutrien.</p>
+                        <button class="open-popup-btn" onclick="openPopup()"><img src="../images/right.svg"></button>
+                    </div>
+                    <img src="../images/brokoli.svg"  class="brokoliimage">
+                </div>
+                <div class="card">
+                
+                    <div class="text-brokoli">
+                        <h1>Bayam</h1>
+                        <p>Bayam mengandung antioksidan tinggi, vitamin A, C, E, dan K,</p>
+                        <button class="open-popup-btn" onclick="openPopup()"><img src="../images/right.svg"></button>
+                    </div>
+                    <img src="../images/bayam.svg"  class="brokoliimage">
+                </div>
+                <div class="card">
+                
+                    <div class="text-brokoli">
+                        <h1>Kale</h1>
+                        <p>Kaya akan vitamin K, vitamin C, dan berbagai mineral penting.</p>
+                        <button class="open-popup-btn" onclick="openPopup()"><img src="../images/right.svg"></button>
+                    </div>
+                    <img src="../images/kale.svg"  class="brokoliimage">
+                </div>
+                <div class="card">
+                
+                    <div class="text-brokoli">
+                        <h1>Kangkung</h1>
+                        <p>Kaya serat, yang baik untuk pencernaan dan mengontrol gula darah.</p>
+                        <button class="open-popup-btn" onclick="openPopup()"><img src="../images/right.svg"></button>
+                    </div>
+                    <img src="../images/kangkung.svg"  class="brokoliimage">
+                </div>
+                <div class="card">
+                
+                    <div class="text-brokoli">
+                        <h1>Selada</h1>
+                        <p>Sumber antioksidan yang melindungi sel-sel tubuh dari kerusakan.</p>
+                        <button class="open-popup-btn" onclick="openPopup()"><img src="../images/right.svg"></button>
+                    </div>
+                    <img src="../images/selada.svg"  class="brokoliimage">
+                </div>
+            </div>
+            <div class="popup-overlay" id="popupOverlay" onclick="closePopup()">
+                <div class="popup" onclick="event.stopPropagation()">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Broccoli_and_cross_section_edit.jpg/800px-Broccoli_and_cross_section_edit.jpg" alt="Brokoli">
+                    <div class="popup-content">
+                        <h2 style="color: #00b894;">Brokoli</h2>
+                        <p>Sayur - Sayuran 🥦</p>
+                        <p>Berikut manfaat brokoli untuk kesehatan:</p>
+                        <ul style="text-align: left;">
+                            <li>Menjaga kesehatan jantung</li>
+                            <li>Kaya serat dan antioksidan</li>
+                            <li>Meningkatkan sistem kekebalan tubuh</li>
+                        </ul>
+                        <button class="close-btn" onclick="closePopup()">Tutup</button>
+                    </div>
+                </div>
+            </div>
+        
+            <script>
+                function openPopup() {
+                    document.getElementById("popupOverlay").style.display = "block";
+                }
+        
+                function closePopup() {
+                    document.getElementById("popupOverlay").style.display = "none";
+                }
+            </script>
+        </div>
+    </section>
+
+    <section class="Buah">
+        <div class="judul-buah">
+            <img src="../images/f51b47dd-4dbf-4740-844a-a4a519fccdf3.svg.png">
+            <h1>Buah-buahan <img src="../images/🍊.png" style="width: 28px;"></h1>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="card">
+                
+                    <div class="text-brokoli">
+                        <h1>Apel</h1>
+                        <p>Apel kaya serat dan antioksidan, baik untuk pencernaan dan menangkal radikal bebas.</p>
+                        <button><img src="../images/right.svg"></button>
+                    </div>
+                    <img src="../images/Apel.svg"  class="brokoliimage-apel">
+                </div>
+                <div class="card">
+                
+                    <div class="text-brokoli">
+                        <h1>Pisang</h1>
+                        <p>Pisang mengandung kalium yang membantu menjaga tekanan darah.</p>
+                        <button><img src="../images/right.svg"></button>
+                    </div>
+                    <img src="../images/Banana.svg"  class="brokoliimage">
+                </div>
+                <div class="card">
+                
+                    <div class="text-brokoli">
+                        <h1>Jeruk</h1>
+                        <p>Kaya vitamin C yang mendukung daya tahan tubuh.</p>
+                        <button><img src="../images/right.svg"></button>
+                    </div>
+                    <img src="../images/Jeruk.svg"  class="brokoliimage">
+                </div>
+                <div class="card">
+                
+                    <div class="text-brokoli">
+                        <h1>Berry </h1>
+                        <p> Antioksidan tinggi yang melawan radikal bebas dan meredakan inflamasi.</p>
+                        <button><img src="../images/right.svg"></button>
+                    </div>
+                    <img src="../images/Berry.svg"  class="brokoliimage">
+                </div>
+                <div class="card">
+                
+                    <div class="text-brokoli">
+                        <h1>Alpukat</h1>
+                        <p>Mengandung lemak sehat, potasium, dan vitamin C.</p>
+                        <button><img src="../images/right.svg"></button>
+                    </div>
+                    <img src="../images/alpukat.svg"  class="brokoliimage">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="laut">
+        <div class="judul-laut">
+            <img src="../images/f51b47dd-4dbf-4740-844a-a4a519fccdf3.svg.png">
+            <h1>Hewan Laut <img src="../images/🐟.png" style="width: 28px;"></h1>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="card">
+                
+                    <div class="text-brokoli">
+                        <h1>Salmon</h1>
+                        <p>mengandung omega-3, DHA, dan EPA yang baik untuk pertumbuhan otak. </p>
+                        <button><img src="../images/right.svg"></button>
+                    </div>
+                    <img src="../images/salmon.svg"  class="brokoliimage">
+                </div>
+                <div class="card">
+                
+                    <div class="text-brokoli">
+                        <h1>Makarel</h1>
+                        <p>Mineral penting yang mendukung fungsi tiroid dan sistem kekebalan tubuh.</p>
+                        <button><img src="../images/right.svg"></button>
+                    </div>
+                    <img src="../images/makarel.svg"  class="brokoliimage">
+                </div>
+                <div class="card">
+                
+                    <div class="text-brokoli">
+                        <h1>Tuna</h1>
+                        <p>mengandung omega-3 yang baik untuk perkembangan otak. </p>
+                        <button><img src="../images/right.svg"></button>
+                    </div>
+                    <img src="../images/tuna.svg"  class="brokoliimage">
+                </div>
+                <div class="card">
+                
+                    <div class="text-brokoli">
+                        <h1>Udang </h1>
+                        <p> mengandung vitamin D, B12, B6, C, dan A untuk perkembangan otak. </p>
+                        <button><img src="../images/right.svg"></button>
+                    </div>
+                    <img src="../images/udang.svg"  class="brokoliimage">
+                </div>
+                <div class="card">
+                
+                    <div class="text-brokoli">
+                        <h1>Sarden</h1>
+                        <p>kaya omega-3, yang membantu mengurangi risiko penyakit jantung dan stroke.</p>
+                        <button><img src="../images/right.svg"></button>
+                    </div>
+                    <img src="../images/sarden.svg"  class="brokoliimage">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="biji">
+        <div class="judul-buah">
+            <img src="../images/f51b47dd-4dbf-4740-844a-a4a519fccdf3.svg.png">
+            <h1>Buah kering dan Biji - bijian <img src="../images/🥜.png" style="width: 28px;"></h1>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="card">
+                
+                    <div class="text-brokoli">
+                        <h1>Quinoa</h1>
+                        <p>Kaya serat, yang baik untuk pencernaan dan mengontrol gula darah.</p>
+                        <button><img src="../images/right.svg"></button>
+                    </div>
+                    <img src="../images/quinoa.svg"  class="brokoliimage">
+                </div>
+                <div class="card">
+                
+                    <div class="text-brokoli">
+                        <h1>Kurma</h1>
+                        <p>Kaya serat, yang baik untuk pencernaan dan mencegah sembelit.</p>
+                        <button><img src="../images/right.svg"></button>
+                    </div>
+                    <img src="../images/kurma.svg"  class="brokoliimage">
+                </div>
+                <div class="card">
+                
+                    <div class="text-brokoli">
+                        <h1>Kismis</h1>
+                        <p>Kaya zat besi, yang membantu mencegah anemia.</p>
+                        <button><img src="../images/right.svg"></button>
+                    </div>
+                    <img src="../images/kismis.svg"  class="brokoliimage">
+                </div>
+                <div class="card">
+                
+                    <div class="text-brokoli">
+                        <h1>Prune </h1>
+                        <p> Mengandung sorbitol, yang membantu meredakan sembelit.</p>
+                        <button><img src="../images/right.svg"></button>
+                    </div>
+                    <img src="../images/prune.svg"  class="brokoliimage">
+                </div>
+                <div class="card">
+                
+                    <div class="text-brokoli">
+                        <h1>Oat</h1>
+                        <p>Baik untuk kesehatan jantung dan pencernaan.</p>
+                        <button><img src="../images/right.svg"></button>
+                    </div>
+                    <img src="../images/oat.svg"  class="brokoliimage">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="qna">
+        <div class="container-5">
+            <div class="title">Frequently Asked Questions</div>
+            <div class="tab">
+                <input type="radio" name="acc" id="acc-1">
+                <label for="acc-1">
+                    <h3>Apa Saja Makanan yang Baik untuk Kesehatan Tubuh?</h3>
+                </label>
+                <div class="content-pertanyaan">
+                    <p>Makanan sehat meliputi sayuran hijau, buah-buahan, protein tanpa lemak (seperti ikan dan ayam), kacang-kacangan, serta makanan yang kaya serat seperti oatmeal dan gandum utuh.</p>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="acc" id="acc-2">
+                <label for="acc-2">
+                    <h3>Berapa Banyak Air yang Harus Kita Minum Setiap Hari?</h3>
+                </label>
+                <div class="content-pertanyaan">
+                    <p>Secara umum, orang dewasa dianjurkan minum sekitar 2-3 liter air per hari atau 8-10 gelas, tergantung pada aktivitas dan kondisi tubuh.</p>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="acc" id="acc-3">
+                <label for="acc-3">
+                    <h3>Apa Manfaat Mengonsumsi Sayur dan Buah Secara Rutin?</h3>
+                </label>
+                <div class="content-pertanyaan">
+                    <p>Sayur dan buah mengandung serat, vitamin, dan antioksidan yang membantu meningkatkan sistem imun, melancarkan pencernaan, serta mengurangi risiko penyakit kronis seperti diabetes dan penyakit jantung.</p>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="acc" id="acc-4">
+                <label for="acc-4">
+                    <h3>Bagaimana Cara Menjaga Pola Makan Seimbang?</h3>
+                </label>
+                <div class="content-pertanyaan">
+                    <p>Pola makan seimbang mencakup karbohidrat (50%), protein (20-25%), lemak sehat (15-20%), serta konsumsi cukup serat, vitamin, dan mineral dari sayur dan buah.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-footer">
+            <div class="footer-top">
+                <div class="logo-footer">LOGO</div>
+                <p class="desk-footer">Menjaga Kesehatan Indonesia</p>
+
+                <div class="button-container">
+                    <button type="button" class="button">Masuk</button>
+                    <button type="button" class="button">Daftar</button>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="footer-bottom">
+                <p>© FitSmart 2025. Hak Cipta Dilindungi Undang-Undang.</p>
+                <div class="footer-links">
+                    <a href="index.html">Beranda</a>
+                    <a href="konsumsi.html">Konsumsi</a>
+                    <a href="penyakit.html">Penyakit</a>
+                    <a href="aktifitas.html">Aktifitas</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+

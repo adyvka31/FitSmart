@@ -1,0 +1,1228 @@
+.judul-konsumsi{
+    text-align: left;
+    width: 65%;
+    margin-left: 55px;
+    font-size: 25px;
+    font-weight: 900;
+    transform: scale(1.1);
+}
+
+.judul-sayuran{
+    margin-left: 95px;
+    display: flex;
+    transform: scale(1);
+}
+
+.judul-sayuran h1{
+    font-size: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.judul-buah h1{
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.judul-laut h1{
+    font-size: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.judul-laut{
+    display: flex;
+    transform: scale(0.9);
+    margin-left: 30px;
+}
+
+
+
+.judul-buah{
+    display: flex;
+    transform: scale(0.9);
+    margin-left: 30px;
+}
+
+.card{
+    display: flex;
+    width: 90%;
+    min-width: 28%;
+    height: auto;
+    background-color: white;
+    outline: 3px solid #00FFFF; /* Outline luar */
+    margin-left: 10px;
+    border-radius: 23px;
+    transform: scale(0.9);
+}
+
+.text-brokoli{
+    font-size: 20px;
+    margin-left: 30px;
+    transform: scale(0.9);
+    padding: 13px 0;
+
+}
+
+.text-brokoli p{
+    font-size: 15px;
+    padding: 10px 0;
+    color: rgb(105, 105, 105);
+}
+
+.brokoliimage{
+    width: 60%;
+    height: auto;
+    margin-left: 10px;
+    border-radius: 0px 23px 23px 0px;
+}
+
+.brokoliimage-apel{
+    width: 60%;
+    height: auto;
+    margin-left: 10px;
+    border-radius: 0px 23px 23px 0px;
+}
+
+
+.text-brokoli button{
+    background: none;
+    border: none;
+    outline: none;
+    transform: scale(1.5);
+    margin-top: 15px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.carousel-container{
+    position: relative; 
+    overflow: hidden; 
+
+}
+.carousel{
+    display: flex;
+    gap: 15px; 
+    overflow-x: auto;
+    padding: 10px 0;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.carousel-container::before,
+.carousel-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    z-index: 5;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    filter: blur(8px);
+}
+
+
+.carousel-container::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 0) 100%);
+}
+
+.carousel-container::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0) 100%);
+}
+
+.text h2{
+    font-size: 13px;
+    color: #00e2e2;
+    animation: fadeInUp linear 0.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+.text h1{
+    font-size: 80px;
+    padding: 15px 0;
+    
+}
+.text p{
+    font-size: 15px;
+    width: 60vw;
+    margin-left: 55px;
+    padding-left: 90px;
+}
+
+.apel{
+    margin-top: -500%;
+    left: 300%;
+    transform: translateX(280%) translateY(-350%) rotate(25deg) scale(0.6);
+}
+.anggur{
+
+    top: 60%;
+    left: 35%;
+    transform: translateX(-400%) translateY(-80%) rotate(25deg) scale(1);
+}
+
+.button-text-container{
+    display: flex;
+    flex-direction: column; /* atau row jika horizontal */
+    align-items: center; /* Pusatkan secara horizontal */
+    justify-content: center; /* Pusatkan secara vertikal */
+    text-align: center; /* Agar teks ikut rata tengah */
+    min-height: 10vh; /* Agar selalu penuh layar */
+    padding-right: 200px;
+}
+
+.button-text{
+    color: white;
+    margin-left: 200px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;  /* Pusatkan secara vertikal */
+    justify-content: center; /* Pusatkan secara horizontal */
+    background-color: #30B0C7;
+    border: none;
+    padding: 5px 20px;
+    box-shadow: 4px 4px 0px black; 
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.button-text:hover{
+    background-color: black;
+    box-shadow: 4px 4px 0px #30B0C7; 
+    transform: translateY(-2px); 
+}
+
+ /* Styling untuk background overlay */
+ .popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+}
+
+/* Styling untuk popup */
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Styling untuk gambar lingkaran */
+.popup img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    top: -50px;
+    background: white;
+    padding: 5px;
+}
+
+/* Styling untuk konten popup */
+.popup-content {
+    margin-top: -40px;
+    padding: 10px;
+}
+
+/* Styling tombol */
+.popup button {
+    padding: 10px 15px;
+    border: none;
+    background: #00b894;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Tombol Buka Popup */
+.open-popup-btn {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.open-popup-btn:hover {
+    background: cyan 20%;
+}
+
+/* Tombol Tutup */
+.close-btn {
+    display: block;
+    margin: 10px auto 0;
+    background: #d63031;
+}
+
+.container-hero{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    min-height: 100vh; 
+}
+
+
+
+
+.Buah{
+    margin-top: 50px;
+}
+.laut{
+    margin-top: 50px;
+}
+
+.biji{
+    margin-top: 50px;
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(70px);
+        visibility: visible;
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+    }
+  }
+
+  @keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-70px);
+        visibility: visible;
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        visibility: visible;
+    }
+  }
+
+  @keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(70px);
+        visibility: visible;
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        visibility: visible;
+    }
+  }
+
+@media (min-width: 350px) and (max-width: 400px){
+    .judul-konsumsi{
+        text-align: left;
+        width: 65%;
+        margin-left: 55px;
+        font-size: 25px;
+        font-weight: 900;
+        transform: scale(1.1);
+    }
+
+    .judul-sayuran{
+        margin-left: 30px;
+        display: flex;
+        transform: scale(0.9);
+    }
+
+    .judul-sayuran h1{
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    .judul-buah h1{
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    .judul-laut h1{
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    .judul-laut{
+        display: flex;
+        transform: scale(0.9);
+        margin-left: 30px;
+    }
+
+
+
+    .judul-buah{
+        display: flex;
+        transform: scale(0.9);
+        margin-left: 30px;
+    }
+
+    .card{
+        display: flex;
+        width: 100%;
+        min-width: 70%;
+        height: auto;
+        background-color: white;
+        outline: 3px solid #00FFFF; /* Outline luar */
+        margin-left: 10px;
+        border-radius: 23px;
+        transform: scale(0.9);
+    }
+
+    
+    .text-brokoli{
+        margin-left: 30px;
+        transform: scale(0.9);
+        padding: 13px 0;
+
+    }
+
+    .text-brokoli p{
+        font-size: 12px;
+        padding: 10px 0;
+        color: rgb(105, 105, 105);
+    }
+
+    .brokoliimage{
+        width: 5%;
+        height: 100%;
+        object-fit: cover;
+        margin-left: 10px;
+    }
+
+    .text-brokoli button{
+        background: none;
+        border: none;
+        outline: none;
+        transform: scale(1.5);
+        margin-top: 15px;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+
+    .carousel-container{
+        position: relative; 
+        overflow: hidden; 
+
+    }
+    .carousel{
+        display: flex;
+        gap: 15px; 
+        overflow-x: auto;
+        padding: 10px 0;
+        scrollbar-width: none;
+        scroll-behavior: smooth;
+    }
+
+    .carousel-container::before,
+    .carousel-container::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 50px;
+        height: 100%;
+        z-index: 5;
+        pointer-events: none;
+        transition: opacity 0.3s;
+        filter: blur(8px);
+    }
+
+
+    .carousel-container::before {
+        left: 0;
+        background: linear-gradient(to right, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 0) 100%);
+    }
+
+    .carousel-container::after {
+        right: 0;
+        background: linear-gradient(to left, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0) 100%);
+    }
+    
+    .text h2{
+        font-size: 13px;
+        color: #00e2e2;
+    }
+
+    .text h1{
+        font-size: 30px;
+        padding: 15px 0;
+    }
+    .text p{
+        font-size: 10px;
+        width: 70vw;
+        margin-left: 20px;
+    }
+
+    .apel{
+
+        top: 30%;
+        left: 45%;
+        transform: translateX(200%) rotate(25deg) scale(0.4);
+        visibility: hidden;
+    }
+    .anggur{
+
+        top: 48%;
+        left: 50%;
+        transform: translateX(-260%) rotate(25deg) scale(0.5);
+        visibility: hidden;
+    }
+
+    .button-text{
+        color: white;
+        margin-left: 130px;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;  /* Pusatkan secara vertikal */
+        justify-content: center; /* Pusatkan secara horizontal */
+        background-color: #30B0C7;
+        border: none;
+        padding: 5px 20px;
+        box-shadow: 4px 4px 0px black; 
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .button-text:hover{
+        background-color: black;
+        box-shadow: 4px 4px 0px #30B0C7; 
+        transform: translateY(-2px); 
+    }
+
+    .container-hero{
+        margin-top: 150px;
+    }
+    
+    .Buah{
+        margin-top: 50px;
+    }
+    .laut{
+        margin-top: 50px;
+    }
+
+    .biji{
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 650px){
+    .judul-konsumsi{
+        text-align: left;
+        width: 65%;
+        margin-left: 55px;
+        font-size: 25px;
+        font-weight: 900;
+        transform: scale(1.1);
+    }
+
+    .judul-sayuran{
+        margin-left: 30px;
+        display: flex;
+        transform: scale(0.9);
+    }
+
+    .judul-sayuran h1{
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    .judul-buah h1{
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    .judul-laut h1{
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    .judul-laut{
+        display: flex;
+        transform: scale(0.9);
+        margin-left: 30px;
+    }
+
+
+
+    .judul-buah{
+        display: flex;
+        transform: scale(0.9);
+        margin-left: 30px;
+    }
+
+    .card{
+        display: flex;
+        width: 100%;
+        min-width: 70%;
+        height: auto;
+        background-color: white;
+        outline: 3px solid #00FFFF; /* Outline luar */
+        margin-left: 10px;
+        border-radius: 23px;
+        transform: scale(0.9);
+    }
+
+    .text-brokoli{
+        margin-left: 30px;
+        transform: scale(0.9);
+        padding: 13px 0;
+
+    }
+
+    .text-brokoli p{
+        font-size: 12px;
+        padding: 10px 0;
+        color: rgb(105, 105, 105);
+    }
+
+    .brokoliimage{
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        margin-left: 10px;
+    }
+
+    .text-brokoli button{
+        background: none;
+        border: none;
+        outline: none;
+        transform: scale(1.5);
+        margin-top: 15px;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+
+    .carousel-container{
+        position: relative; 
+        overflow: hidden; 
+
+    }
+    .carousel{
+        display: flex;
+        gap: 15px; 
+        overflow-x: auto;
+        padding: 10px 0;
+        scrollbar-width: none;
+        scroll-behavior: smooth;
+    }
+
+    .carousel-container::before,
+    .carousel-container::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 50px;
+        height: 100%;
+        z-index: 5;
+        pointer-events: none;
+        transition: opacity 0.3s;
+        filter: blur(8px);
+    }
+
+
+    .carousel-container::before {
+        left: 0;
+        background: linear-gradient(to right, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 0) 100%);
+    }
+
+    .carousel-container::after {
+        right: 0;
+        background: linear-gradient(to left, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0) 100%);
+    }
+    
+    .text{
+        margin-top: -100px;
+    }
+
+    .text h2{
+        font-size: 12px;
+        color: #00e2e2;
+    }
+
+    .text h1{
+        font-size: 25px;
+        padding: 15px 0;
+    }
+    .text p{
+        font-size: 10px;
+        width: 95vw;
+        margin-left: -30px;
+    }
+
+    .apel{
+        top: 30%;
+        left: 45%;
+        transform: translateX(200%) rotate(25deg) scale(0.4);
+        visibility: hidden;
+    }
+    .anggur{
+        top: 48%;
+        left: 50%;
+        transform: translateX(-260%) rotate(25deg) scale(0.5);
+        visibility: hidden;
+    }
+
+    .button-text{
+        color: white;
+        margin-left: 200px;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;  /* Pusatkan secara vertikal */
+        justify-content: center; /* Pusatkan secara horizontal */
+        background-color: #30B0C7;
+        border: none;
+        padding: 5px 20px;
+        box-shadow: 4px 4px 0px black; 
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .button-text:hover{
+        background-color: black;
+        box-shadow: 4px 4px 0px #30B0C7; 
+        transform: translateY(-2px); 
+    }
+
+    .container-hero{
+        margin-top: 150px;
+    }
+    
+    .Buah{
+        margin-top: 50px;
+    }
+    .laut{
+        margin-top: 50px;
+    }
+
+    .biji{
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 1000px){
+    .judul-konsumsi{
+        text-align: left;
+        width: 65%;
+        margin-left: 55px;
+        font-size: 25px;
+        font-weight: 900;
+        transform: scale(1.1);
+    }
+
+    .judul-sayuran{
+        margin-left: 30px;
+        display: flex;
+        transform: scale(0.9);
+    }
+
+    .judul-sayuran h1{
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    .judul-buah h1{
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    .judul-laut h1{
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    .judul-laut{
+        display: flex;
+        transform: scale(0.9);
+        margin-left: 30px;
+    }
+
+
+
+    .judul-buah{
+        display: flex;
+        transform: scale(0.9);
+        margin-left: 30px;
+    }
+
+    .card{
+        display: flex;
+        width: 100%;
+        min-width: 48%;
+        height: auto;
+        background-color: white;
+        outline: 3px solid #00FFFF; /* Outline luar */
+        margin-left: 10px;
+        border-radius: 23px;
+        transform: scale(0.9);
+    }
+
+    .text-brokoli{
+        margin-left: 30px;
+        transform: scale(0.9);
+        padding: 13px 0;
+
+    }
+
+    .text-brokoli p{
+        font-size: 12px;
+        padding: 10px 0;
+        color: rgb(105, 105, 105);
+    }
+
+    .brokoliimage{
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        margin-left: 10px;
+    }
+
+    .text-brokoli button{
+        background: none;
+        border: none;
+        outline: none;
+        transform: scale(1.5);
+        margin-top: 15px;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+
+    .carousel-container{
+        position: relative; 
+        overflow: hidden; 
+
+    }
+    .carousel{
+        display: flex;
+        gap: 15px; 
+        overflow-x: auto;
+        padding: 10px 0;
+        scrollbar-width: none;
+        scroll-behavior: smooth;
+    }
+
+    .carousel-container::before,
+    .carousel-container::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 50px;
+        height: 100%;
+        z-index: 5;
+        pointer-events: none;
+        transition: opacity 0.3s;
+        filter: blur(8px);
+    }
+
+
+    .carousel-container::before {
+        left: 0;
+        background: linear-gradient(to right, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 0) 100%);
+    }
+
+    .carousel-container::after {
+        right: 0;
+        background: linear-gradient(to left, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    .text{
+        padding-bottom: 250px;
+    }
+    
+    .text h2{
+        font-size: 13px;
+        color: #00e2e2;
+    }
+
+    .text h1{
+        font-size: 6vw;
+        padding: 15px 0;
+    }
+    .text p{
+        font-size: 1.3vw;
+        width: 94vw;
+        padding-right: 150px;
+    }
+
+    .apel{
+        left: 42%;
+        transform: translateX(200%) rotate(10deg) scale(0.4) translateY(-1450%);
+        visibility: hidden;
+    }
+    .anggur{
+        top: 48vw;
+        left: 45vw;
+        transform: translateX(-350%) rotate(10deg)  scale(0.7) translateY(-600%);
+        visibility: hidden;
+    }
+
+    .button-text{
+        color: white;
+        margin-left: 200px;
+        padding-top: 20px;
+        display: flex;
+        align-items: center;  /* Pusatkan secara vertikal */
+        justify-content: center; /* Pusatkan secara horizontal */
+        background-color: #30B0C7;
+        border: none;
+        padding: 5px 20px;
+        box-shadow: 4px 4px 0px black; 
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .button-text:hover{
+        background-color: black;
+        box-shadow: 4px 4px 0px #30B0C7; 
+        transform: translateY(-2px); 
+    }
+
+    .container-hero{
+        margin-top: 150px;
+    }
+    
+    .Buah{
+        margin-top: 50px;
+    }
+    .laut{
+        margin-top: 50px;
+    }
+
+    .biji{
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px){
+    .judul-konsumsi{
+        text-align: left;
+        width: 65%;
+        margin-left: 55px;
+        font-size: 25px;
+        font-weight: 900;
+        transform: scale(1.1);
+    }
+
+    .judul-sayuran{
+        margin-left: 30px;
+        display: flex;
+        transform: scale(0.9);
+    }
+
+    .judul-sayuran h1{
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    .judul-buah h1{
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    .judul-laut h1{
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    .judul-laut{
+        display: flex;
+        transform: scale(0.9);
+        margin-left: 30px;
+    }
+
+
+
+    .judul-buah{
+        display: flex;
+        transform: scale(0.9);
+        margin-left: 30px;
+    }
+
+    .card{
+        display: flex;
+        width: 100%;
+        min-width: 48%;
+        height: auto;
+        background-color: white;
+        outline: 3px solid #00FFFF; /* Outline luar */
+        margin-left: 10px;
+        border-radius: 23px;
+        transform: scale(0.9);
+    }
+
+    .text-brokoli{
+        margin-left: 30px;
+        transform: scale(0.9);
+        padding: 13px 0;
+
+    }
+
+    .text-brokoli p{
+        font-size: 12px;
+        padding: 10px 0;
+        color: rgb(105, 105, 105);
+    }
+
+    .brokoliimage{
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        margin-left: 10px;
+    }
+
+    .text-brokoli button{
+        background: none;
+        border: none;
+        outline: none;
+        transform: scale(1.5);
+        margin-top: 15px;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+
+    .carousel-container{
+        position: relative; 
+        overflow: hidden; 
+
+    }
+    .carousel{
+        display: flex;
+        gap: 15px; 
+        overflow-x: auto;
+        padding: 10px 0;
+        scrollbar-width: none;
+        scroll-behavior: smooth;
+    }
+
+    .carousel-container::before,
+    .carousel-container::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 50px;
+        height: 100%;
+        z-index: 5;
+        pointer-events: none;
+        transition: opacity 0.3s;
+        filter: blur(8px);
+    }
+
+
+    .carousel-container::before {
+        left: 0;
+        background: linear-gradient(to right, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 0) 100%);
+    }
+
+    .carousel-container::after {
+        right: 0;
+        background: linear-gradient(to left, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    .text{
+        padding-bottom: 250px;
+    }
+    
+    .text h2{
+        font-size: 13px;
+        color: #00e2e2;
+    }
+
+    .text h1{
+        font-size: 6vw;
+        padding: 15px 0;
+    }
+    .text p{
+        font-size: 1.3vw;
+        width: 94vw;
+        padding-right: 150px;
+    }
+
+    .apel{
+        left: 42%;
+        transform: translateX(200%) rotate(10deg) scale(0.4) translateY(-1450%);
+        visibility: hidden;
+    }
+    .anggur{
+        top: 48vw;
+        left: 45vw;
+        transform: translateX(-350%) rotate(10deg)  scale(0.7) translateY(-600%);
+        visibility: hidden;
+    }
+
+    .button-text{
+        color: white;
+        margin-left: 200px;
+        padding-top: 20px;
+        display: flex;
+        align-items: center;  /* Pusatkan secara vertikal */
+        justify-content: center; /* Pusatkan secara horizontal */
+        background-color: #30B0C7;
+        border: none;
+        padding: 5px 20px;
+        box-shadow: 4px 4px 0px black; 
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .button-text:hover{
+        background-color: black;
+        box-shadow: 4px 4px 0px #30B0C7; 
+        transform: translateY(-2px); 
+    }
+
+    .container-hero{
+        margin-top: 150px;
+    }
+    
+    .Buah{
+        margin-top: 50px;
+    }
+    .laut{
+        margin-top: 50px;
+    }
+
+    .biji{
+        margin-top: 50px;
+    }
+}
+
+.qna {
+    width: 100vw;
+    padding: 0px 110px;
+}
+
+.container-5 {
+    width: 100%;
+    margin: 180px auto;
+    background-color: #30B0C7;
+    border: 2px solid #2480aa;
+    border-radius: 15px;
+    padding: 70px 180px;
+}
+.title {
+    font-family: 'Poppins-Medium';
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 35px;
+    animation: fadeInUp linear;
+    transition: 0.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+.tab {
+    margin-bottom: 10px;
+    border-bottom: 1px solid white;
+    animation: fadeInUp linear;
+    transition: 0.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+.tab input {
+    display: none;
+}
+.tab label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tab h3 {
+    margin: 0;
+    color: white;
+    font-size: 16px;
+}
+.content-pertanyaan {
+    font-family: 'Poppins-Light';
+    display: none;
+    padding-left: 15px;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.tab input:checked + label + .content-pertanyaan {
+    display: block;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(70px);
+        visibility: visible;
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+    }
+  }
+
+  @keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-70px);
+        visibility: visible;
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        visibility: visible;
+    }
+  }
+
+  @keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(70px);
+        visibility: visible;
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        visibility: visible;
+    }
+  }
