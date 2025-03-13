@@ -34,8 +34,9 @@ body {
 }
 
 .logo {
-    font-size: 25px;
-    font-family: 'Poppins-Medium';
+    width: 31px;
+    height: 50px;
+    background-image: url(../Images/logo.svg);
 }
 
 .nav-links {
@@ -499,9 +500,9 @@ footer {
 }
 
 .logo-footer {
-    color: white;
-    font-size: 25px;
-    font-family: 'Poppins-Medium';
+    width: 31px;
+    height: 50px;
+    background-image: url(../Images/logo.svg);
 }
 
 .desk-footer {

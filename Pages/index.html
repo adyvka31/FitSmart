@@ -6,11 +6,12 @@
     <title>FitSmart - Edukasi Kesehatan</title>
     <link rel="stylesheet" href="../Style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" href="../Images/logo-putih.svg">
 
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">LOGO</div>
+        <div class="logo"></div>
         <ul class="nav-links">
             <li><a href="index.html">Beranda</a></li>
             <li><a href="konsumsi.html">Konsumsi</a></li>
@@ -116,9 +117,34 @@
                     ✅ Mencegah dan mengurangi stres berlebih. <br>
                     ✅ Membersihkan racun dalam tubuh (Detoksifikasi)
                 </p>
-                <a href="konsumsi.html">
-                <button class="primary-btn-makanan">Pelajari Lebih →</button>
-                </a>
+                <button class="primary-btn-makanan" onclick="openPopup()">Pelajari Lebih →</button>
+            </div>
+        </div>
+        <div id="popup" class="popup" style="display: none;">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <div class="popup_highlight1"></div>
+                <h2>Buah-Buahan &</h2>
+                <p>Buah-buahan dan sayur-sayuran merupakan sumber makanan alami yang kaya akan nutrisi penting bagi kesehatan tubuh. Keduanya mengandung berbagai vitamin, mineral, serat, dan antioksidan yang berperan dalam menjaga keseimbangan gizi serta mencegah berbagai penyakit. <br> <br>
+
+                    Manfaat Buah-buahan dan Sayur-sayuran <br> <br>
+                    Meningkatkan Sistem Imun – Kandungan vitamin C, A, dan antioksidan dalam buah dan sayur membantu meningkatkan daya tahan tubuh dan melawan infeksi. <br>
+                    Menjaga Kesehatan Pencernaan – Serat yang tinggi dalam sayur dan buah membantu melancarkan pencernaan serta mencegah sembelit. <br>
+                    Menurunkan Risiko Penyakit Kronis – Konsumsi buah dan sayur secara rutin dapat mengurangi risiko penyakit jantung, tekanan darah tinggi, serta beberapa jenis kanker. <br>
+                    Mendukung Berat Badan Sehat – Rendah kalori dan kaya serat membuat buah dan sayur menjadi pilihan makanan yang baik untuk menjaga berat badan ideal. <br>
+                    Jenis-jenis Buah dan Sayur serta Kandungan Gizinya <br> <br>
+                    Buah-buahan <br> <br>
+                    Buah Beri (Stroberi, Blueberry, Raspberry) – Kaya antioksidan dan vitamin C untuk menjaga kesehatan jantung. <br>
+                    Pisang – Mengandung kalium tinggi yang baik untuk kesehatan otot dan tekanan darah. <br>
+                    Jeruk & Lemon – Sumber vitamin C yang meningkatkan sistem kekebalan tubuh. <br>
+                    Apel & Pir – Kaya serat untuk pencernaan yang sehat. <br>
+                    Sayur-sayuran <br> <br>
+                    Bayam & Kale – Mengandung zat besi dan antioksidan untuk kesehatan darah dan kulit. <br>
+                    Wortel – Kaya beta-karoten yang bermanfaat bagi kesehatan mata. <br>
+                    Brokoli & Kubis – Mengandung serat tinggi dan zat anti-kanker. <br>
+                    Tomat – Sumber likopen yang baik untuk kesehatan jantung. <br>
+                    Mengonsumsi buah dan sayur setiap hari sangat dianjurkan untuk menjaga kesehatan tubuh secara menyeluruh. Kombinasi warna dan jenis yang beragam dalam menu harian dapat memberikan manfaat yang maksimal bagi tubuh. <br>
+                    </p>
             </div>
         </div>
     </section>
@@ -133,21 +159,17 @@
                     <p style="margin-bottom: 15px;">Diabetes Mellitus adalah gangguan metabolik kronis yang ditandai dengan kadar gula darah yang tinggi akibat gangguan produksi atau penggunaan insulin dalam tubuh.</p>
                     <p class="second-p-penyakit">Diabetes terbagi menjadi beberapa jenis, termasuk diabetes tipe 1, tipe 2, dan diabetes gestasional. Faktor risiko utama meliputi pola makan tidak sehat.</p>
                     <a href="penyakit.html">
-                    <button class="primary-btn-penyakit">Pelajari Lebih →</button>
-                    </a>
-                    <a href="penyakit.html">
                     <button class="secondary-btn-penyakit">Penyakit Lainnya </button>
                     </a>
                 </div>
+                
             </div>
             <div class="penyakit2">
                 <div class="card2">
                     <h1>Kolesterol Tinggi: <br> Risiko PKV</h1>
                     <p style="margin-bottom: 15px;">Kolesterol tinggi terjadi ketika kadar lemak dalam darah melebihi batas normal, yang dapat meningkatkan risiko penyakit kardiovaskular (PKV).</p>
                     <p class="second-p-penyakit">Faktor risiko utama meliputi pola makan tinggi lemak jenuh, serta faktor genetik. Pengelolaan kolesterol dapat dilakukan dengan menerapkan pola makan sehat.</p>
-                    <a href="penyakit.html">
-                    <button class="primary-btn-penyakit">Pelajari Lebih →</button>
-                    </a>
+                    <button class="primary-btn-penyakit" onclick="openPopup()">Pelajari Lebih →</button>
                     <a href="penyakit.html">
                     <button class="secondary-btn-penyakit">Penyakit Lainnya </button>
                     </a>
@@ -160,9 +182,8 @@
                     <h1>(GERD): Gangguan Pencernaan</h1>
                     <p style="margin-bottom: 15px;">Gastroesophageal reflux disease (GERD) adalah kondisi di mana asam lambung naik kembali ke kerongkongan, menyebabkan sensasi terbakar di dada (heartburn).</p>
                     <p class="second-p-penyakit">Jika tidak ditangani, GERD dapat menyebabkan komplikasi serius seperti radang kerongkongan dan gangguan pernapasan.</p>
-                    <a href="penyakit.html">
-                    <button class="primary-btn-penyakit">Pelajari Lebih →</button>
-                    </a>
+                    <button class="primary-btn-penyakit" onclick="openPopup()">Pelajari Lebih →</button>
+
                     <a href="penyakit.html">
                     <button class="secondary-btn-penyakit">Penyakit Lainnya </button>
                     </a>
@@ -190,9 +211,7 @@
                 </div>
                 <h3>Berenang</h3>
                 <p>Berenang adalah gerakan sewaktu bergerak di air. Berenang biasanya dilakukan tanpa perlengkapan buatan.</p>
-                <a href="aktifitas.html">
-                <button class="primary-btn-aktifitas">Pelajari Lebih →</button>
-                </a>
+                <button class="primary-btn-aktifitas" onclick="openPopup()">Pelajari Lebih →</button>
             </div>
     
             <div class="blog-card">
@@ -203,9 +222,7 @@
                 </div>
                 <h3>Jogging / Running</h3>
                 <p>joging adalah suatu bentuk berlari dengan kecepatan lambat atau santai. Lari laun bertujuan untuk meningkatkan kebugaran jasmani.</p>
-                <a href="aktifitas.html">
-                <button class="primary-btn-aktifitas">Pelajari Lebih →</button>
-                </a>
+                <button class="primary-btn-aktifitas" onclick="openPopup()">Pelajari Lebih →</button>
             </div>
     
             <div class="blog-card">
@@ -216,9 +233,7 @@
                 </div>
                 <h3>Bersepeda</h3>
                 <p>Bersepeda adalah sebuah kegiatan rekreasi atau olahraga, serta merupakan salah satu moda transportasi darat yang menggunakan sepeda.</p>
-                <a href="aktifitas.html">
-                <button class="primary-btn-aktifitas">Pelajari Lebih →</button>
-                </a>
+                <button class="primary-btn-aktifitas" onclick="openPopup()">Pelajari Lebih →</button>
             </div>
         </div>
     </section>
@@ -226,7 +241,7 @@
     <footer>
         <div class="container-footer">
             <div class="footer-top">
-                <div class="logo-footer">LOGO</div>
+                <div class="logo-footer"></div>
                 <p class="desk-footer">Menjaga Kesehatan Indonesia</p>
 
                 <div class="button-container">
@@ -248,5 +263,6 @@
             </div>
         </div>
     </footer>
+<script src="../script.js"></script>
 </body>
 </html>

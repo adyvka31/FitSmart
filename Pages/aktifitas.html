@@ -6,10 +6,11 @@
     <title>Aktifitas | FitSmart</title>
     <link rel="stylesheet" href="../Style/aktifitas.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" href="../Images/logo-putih.svg">
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">LOGO</div>
+        <div class="logo"></div>
         <ul class="nav-links">
             <li><a href="index.html">Beranda</a></li>
             <li><a href="konsumsi.html">Konsumsi</a></li>
@@ -112,17 +113,6 @@
                 </div>
             </div>
 
-            <script>
-                // Function to open popup
-                function openPopup() {
-                    document.getElementById("popup").style.display = "flex";
-                }
-
-                // Function to close popup
-                function closePopup() {
-                    document.getElementById("popup").style.display = "none";
-                }
-            </script>
         </div>
         <div class="blog-aktifitas2">
             <div class="text-aktifitas">
@@ -139,7 +129,7 @@
                     2. Asma <br>
                     3. Obesitas</p>
                 </div>
-                <button class="primary-btn-aktifitas">Pelajari Lebih →</button>
+                <button class="primary-btn-aktifitas" onclick="openPopup()">Pelajari Lebih →</button>
             </div>
             
             <div class="gambar-aktifitas2"></div>
@@ -160,7 +150,7 @@
                     2. Sindrom Metabolik  <br>
                     3. Insomnia</p>
                 </div>
-                <button class="primary-btn-aktifitas">Pelajari Lebih →</button>
+                <button class="primary-btn-aktifitas" onclick="openPopup()">Pelajari Lebih →</button>
             </div>
         </div>
         <div class="blog-aktifitas2">
@@ -178,7 +168,7 @@
                     2. Diabetes Tipe 2 <br>
                     3. Obesitas</p>
                 </div>
-                <button class="primary-btn-aktifitas">Pelajari Lebih →</button>
+                <button class="primary-btn-aktifitas" onclick="openPopup()">Pelajari Lebih →</button>
             </div>
             <div class="gambar-aktifitas4"></div>
         </div>
@@ -256,5 +246,16 @@
             </div>
         </div>
     </footer>
+<script>
+    // Function to open popup
+    function openPopup() {
+        document.getElementById("popup").style.display = "flex";
+    }
+
+    // Function to close popup
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+    }
+</script>
 </body>
 </html>
