@@ -125,12 +125,14 @@ body {
 }
 
 .hero-content p {
+    width: 92%;
     font-family: 'Poppins-Light';
     font-size: 15px;
     color: #444;
     margin-top: 10px;
     line-height: 1.7;
     margin: 40px 0px;
+    text-align: justify;
     animation: fadeInLeft 0.9s ease-in-out forwards;
 }
 .dropdown-menu{
@@ -241,7 +243,7 @@ body {
 }
 
 .text-makanan-kanan h1 {
-    text-align: left;
+    text-align: justify;
     font-family: 'Poppins-Medium';
     font-stretch: extra-expanded;
     font-size: 50px;
@@ -289,7 +291,7 @@ body {
 
 .text-container {
     width: 45%;
-    text-align: left;
+    text-align: justify;
     margin-top: -5rem;
     margin-left: 60px;
 }
@@ -400,6 +402,7 @@ body {
 }
 .card1 p, .card2 p, .card3 p {
     width: 90%;
+    text-align: justify;
     font-family: 'Poppins-Light';
     font-size: 15px;
     color: #444;
@@ -550,7 +553,7 @@ body {
 }
 
 .text-olahraga-kanan h1 {
-    text-align: left;
+    text-align: justify;
     font-family: 'Poppins-Medium';
     font-stretch: extra-expanded;
     font-size: 50px;
@@ -588,7 +591,7 @@ body {
     border-radius: 12px;
     padding: 20px;
     width: 100%;
-    text-align: left;
+    text-align: justify;
 }
 
 .olahraga-img1 {
@@ -687,6 +690,8 @@ body {
 
 .blog-card p {
     font-family: 'Poppins-Light';
+    text-align: justify;
+    line-height: 1.7;
     font-size: 14px;
     color: #555;
     margin-bottom: 27px;
@@ -1389,7 +1394,7 @@ hr {
         width: 100%;
         font-size: 12px;
         padding: 0 50px;
-        text-align: left;
+        text-align: justify;
     }
 
     .primary-btn-makanan {
@@ -1540,7 +1545,7 @@ hr {
     }
 
     .blog-card {
-        text-align: left;
+        text-align: justify;
         padding: 30px;
         margin-bottom: 5px;
     }
@@ -1824,7 +1829,7 @@ hr {
         width: 100%;
         font-size: 14px;
         padding: 0 80px;
-        text-align: left;
+        text-align: justify;
     }
     
     .penyakit {
@@ -1932,7 +1937,7 @@ hr {
     }
 
     .blog-card {
-        text-align: left;
+        text-align: justify;
         padding: 40px;
         margin-bottom: 5px;
     }
@@ -2185,18 +2190,18 @@ hr {
 
     .text-container h2 {
         margin-bottom: 10px;
-        text-align: left;
+        text-align: justify;
     }
 
     .text-container h1 {
         font-size: 32px;
-        text-align: left;
+        text-align: justify;
     }
 
     .text-container p {
         width: 100%;
         font-size: 14px;
-        text-align: left;
+        text-align: justify;
     }
     
     .penyakit {
@@ -2317,7 +2322,7 @@ hr {
     }
 
     .blog-card {
-        text-align: left;
+        text-align: justify;
         padding: 40px 100px;
     }
 
