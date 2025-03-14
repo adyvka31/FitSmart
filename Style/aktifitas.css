@@ -655,6 +655,10 @@ body {
     font-size: 60px;
     text-align: center;
     margin: 11rem auto;
+    animation: fadeInUp linear;
+    transition: 0.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
 }
 
 

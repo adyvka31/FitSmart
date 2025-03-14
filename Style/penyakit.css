@@ -104,7 +104,6 @@ body {
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    background-color: #f0f9fa;
 }
 
 .hero-content {
@@ -213,7 +212,7 @@ body {
 .penyakit-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 40px;
 
 }
 
@@ -242,7 +241,7 @@ body {
     animation: fadeInUp linear;
     transition: 3s ease-in-out;
     animation-timeline: view();
-    animation-range: entry 5% cover 35%;
+    animation-range: entry 0% cover 30%;
 }
 .card1 h1, .card2 h1, .card3 h1 {
     font-family: 'Poppins-Medium';
@@ -287,7 +286,7 @@ body {
     animation: fadeInUp linear;
     transition: 0.3s ease-in-out;
     animation-timeline: view();
-    animation-range: entry 5% cover 35%;
+    animation-range: entry 0% cover 30%;
     border-radius: 15px 0px 0px 15px;
 
 }
@@ -316,11 +315,11 @@ body {
     background: white;
     padding: 50px 50px 20px 50px;
     border-radius: 15px;
-    text-align: center;
-    width: 40%;
+    width: 100%;
     height: 90%;
     position: relative;
     max-height: 80vh; 
+    max-width: 40%;
     overflow-y: auto;
     overflow-x: hidden; 
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
@@ -335,7 +334,7 @@ body {
 .popup-content p{
     background: white;
     margin-top: 30px;
-    text-align: center;
+    text-align: justify;
 }
 
 .popup_highlight1{
@@ -387,7 +386,7 @@ body {
     animation: fadeInUp linear;
     transition: 3s ease-in-out;
     animation-timeline: view();
-    animation-range: entry 5% cover 35%;
+    animation-range: entry 10% cover 40%;
 }
 .card1 h1, .card2 h1, .card3 h1 {
     font-family: 'Poppins-Medium';
@@ -432,7 +431,7 @@ body {
     animation: fadeInUp linear;
     transition: 0.3s ease-in-out;
     animation-timeline: view();
-    animation-range: entry 5% cover 35%;
+    animation-range: entry 10% cover 40%;
     border-radius: 15px 0px 0px 15px;
 
 }
@@ -457,30 +456,30 @@ body {
     z-index: 40;
 }
 
-.popup-content {
+.popup-content2 {
     background: white;
     padding: 50px 50px 20px 50px;
     border-radius: 15px;
-    text-align: center;
-    width: 80%;
+    width: 100%;
     height: 90%;
     position: relative;
     max-height: 80vh; 
+    max-width: 40%; 
     overflow-y: auto;
     overflow-x: hidden; 
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
 }
-.popup-content h2{
+.popup-content2 h2{
     font-family: 'Poppins-Medium';
     font-size: 30px;
     background: white;
     margin-top: 50px;
     text-align: center;
 }
-.popup-content p{
+.popup-content2 p{
     background: white;
     margin-top: 30px;
-    text-align: center;
+    text-align: justify;
 }
 
 .popup_highlight2{
@@ -490,18 +489,18 @@ body {
     border-color: black;
     width: 100%;
     border: 1px solid black;
-    background-image: url('../Images/penyakit3.svg');
+    background-image: url('../Images/penyakit2.svg');
     background-position: center;
     background-size: cover;
     border-radius: 15px;
 }
 
-.popup-content::-webkit-scrollbar {
+.popup-content2::-webkit-scrollbar {
     width: 0px; 
     display: none;
 }
 
-.popup-content {
+.popup-content2 {
     scrollbar-width: none;
 }
 
@@ -518,7 +517,6 @@ body {
 .penyakit3 {
     display: flex;
     width: 100%;
-    margin-top: 6rem;
 }
 
 .card3 {
@@ -532,7 +530,7 @@ body {
     animation: fadeInUp linear;
     transition: 3s ease-in-out;
     animation-timeline: view();
-    animation-range: entry 5% cover 35%;
+    animation-range: entry 10% cover 40%;
 }
 .card1 h1, .card2 h1, .card3 h1 {
     font-family: 'Poppins-Medium';
@@ -577,7 +575,7 @@ body {
     animation: fadeInUp linear;
     transition: 0.3s ease-in-out;
     animation-timeline: view();
-    animation-range: entry 5% cover 35%;
+    animation-range: entry 10% cover 40%;
     border-radius: 15px 0px 0px 15px;
 
 }
@@ -602,30 +600,31 @@ body {
     z-index: 40;
 }
 
-.popup-content {
+.popup-content3 {
     background: white;
     padding: 50px 50px 20px 50px;
     border-radius: 15px;
     text-align: center;
-    width: 80%;
+    width: 100%;
     height: 90%;
     position: relative;
     max-height: 80vh; 
+    max-width: 40%;
     overflow-y: auto;
     overflow-x: hidden; 
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
 }
-.popup-content h2{
+.popup-content3 h2{
     font-family: 'Poppins-Medium';
     font-size: 30px;
     background: white;
     margin-top: 50px;
     text-align: center;
 }
-.popup-content p{
+.popup-content3 p{
     background: white;
     margin-top: 30px;
-    text-align: center;
+    text-align: justify;
 }
 
 .popup_highlight3{
@@ -635,18 +634,18 @@ body {
     border-color: black;
     width: 100%;
     border: 1px solid black;
-    background-image: url('../Images/penyakit2.svg');
+    background-image: url('../Images/penyakit3.svg');
     background-position: center;
     background-size: cover;
     border-radius: 15px;
 }
 
-.popup-content::-webkit-scrollbar {
+.popup-content3::-webkit-scrollbar {
     width: 0px; 
     display: none;
 }
 
-.popup-content {
+.popup-content3 {
     scrollbar-width: none;
 }
 
@@ -659,10 +658,445 @@ body {
 }
 /* Penyakit 3 Popup end*/
 
+/* penyakit 4 */
+.penyakit4 {
+    display: flex;
+    width: 100%;
+}
+
+.card4 {
+    width: 120%;
+    float: inline-end;
+    padding: 35px 30px;
+    background: white;
+    height: 350px;
+    border: 1px solid;
+    border-color: black;
+    animation: fadeInUp linear;
+    transition: 3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+.card1 h1, .card2 h1, .card3 h1, .card4 h1 {
+    font-family: 'Poppins-Medium';
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.card1 p, .card2 p, .card3 p, .card4 p {
+    width: 90%;
+    font-family: 'Poppins-Light';
+    font-size: 15px;
+    color: #444;
+    line-height: 1.7;
+}
+
+.primary-btn-penyakit {
+    background-color: #30B0C7;
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-right: 20px;
+    position: relative;
+    box-shadow: 4px 4px 0px black;
+    transition: 0.3s ease-in-out;
+}
+
+.primary-btn-penyakit:hover {
+    background-color: #2480aa;
+    box-shadow: none;
+}
+
+.card_highlight4 {
+    width: 80%;
+    border: 1px solid black;
+    background-image: url('../Images/penyakit4.svg');
+    background-position: center;
+    background-size: cover;
+    animation: fadeInUp linear;
+    transition: 0.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+    border-radius: 15px 0px 0px 15px;
+
+}
+.card_text {
+    border-radius: 0px 15px 15px 0px;
+
+}
+/* penyakit 4 */
+
+/* Penyakit 4 Popup */
+.popup4 {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 40;
+}
+
+.popup-content4 {
+    background: white;
+    padding: 50px 50px 20px 50px;
+    border-radius: 15px;
+    text-align: center;
+    width: 100%;
+    height: 90%;
+    position: relative;
+    max-height: 80vh; 
+    max-width: 40%;
+    overflow-y: auto;
+    overflow-x: hidden; 
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.popup-content4 h2{
+    font-family: 'Poppins-Medium';
+    font-size: 30px;
+    background: white;
+    margin-top: 50px;
+    text-align: center;
+}
+.popup-content4 p{
+    background: white;
+    margin-top: 30px;
+    text-align: justify;
+}
+
+.popup_highlight4{
+    background: white;
+    height: 350px;
+    border: 1px solid;
+    border-color: black;
+    width: 100%;
+    border: 1px solid black;
+    background-image: url('../Images/penyakit4.svg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.popup-content4::-webkit-scrollbar {
+    width: 0px; 
+    display: none;
+}
+
+.popup-content4 {
+    scrollbar-width: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+/* Penyakit 4 Popup end*/
+
+/* penyakit 5 */
+.penyakit5 {
+    display: flex;
+    width: 100%;
+}
+
+.card5 {
+    width: 120%;
+    float: inline-end;
+    padding: 35px 30px;
+    background: white;
+    height: 350px;
+    border: 1px solid;
+    border-color: black;
+    animation: fadeInUp linear;
+    transition: 3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+.card1 h1, .card2 h1, .card3 h1 {
+    font-family: 'Poppins-Medium';
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.card1 p, .card2 p, .card3 p {
+    width: 90%;
+    font-family: 'Poppins-Light';
+    font-size: 15px;
+    color: #444;
+    line-height: 1.7;
+}
+
+.primary-btn-penyakit {
+    background-color: #30B0C7;
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-right: 20px;
+    position: relative;
+    box-shadow: 4px 4px 0px black;
+    transition: 0.3s ease-in-out;
+}
+
+.primary-btn-penyakit:hover {
+    background-color: #2480aa;
+    box-shadow: none;
+}
+
+.card_highlight5 {
+    width: 80%;
+    border: 1px solid black;
+    background-image: url('../Images/penyakit5.svg');
+    background-position: center;
+    background-size: cover;
+    animation: fadeInUp linear;
+    transition: 0.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+    border-radius: 15px 0px 0px 15px;
+
+}
+.card_text {
+    border-radius: 0px 15px 15px 0px;
+
+}
+/* penyakit 5 */
+
+/* Penyakit 5 Popup */
+.popup5 {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 40;
+}
+
+.popup-content5 {
+    background: white;
+    padding: 50px 50px 20px 50px;
+    border-radius: 15px;
+    text-align: center;
+    width: 100%;
+    height: 90%;
+    position: relative;
+    max-height: 80vh; 
+    max-width: 40%;
+    overflow-y: auto;
+    overflow-x: hidden; 
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.popup-content5 h2{
+    font-family: 'Poppins-Medium';
+    font-size: 30px;
+    background: white;
+    margin-top: 50px;
+    text-align: center;
+}
+.popup-content5 p{
+    background: white;
+    margin-top: 30px;
+    text-align: justify;
+}
+
+.popup_highlight5{
+    background: white;
+    height: 350px;
+    border: 1px solid;
+    border-color: black;
+    width: 100%;
+    border: 1px solid black;
+    background-image: url('../Images/penyakit5.svg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.popup-content5::-webkit-scrollbar {
+    width: 0px; 
+    display: none;
+}
+
+.popup-content5 {
+    scrollbar-width: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+/* Penyakit 5 Popup end*/
+
+/* penyakit 6 */
+.penyakit6 {
+    display: flex;
+    width: 100%;
+}
+
+.card6 {
+    width: 120%;
+    float: inline-end;
+    padding: 35px 30px;
+    background: white;
+    height: 350px;
+    border: 1px solid;
+    border-color: black;
+    animation: fadeInUp linear;
+    transition: 3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 10% cover 40%;
+}
+.card1 h1, .card2 h1, .card3 h1, .card4 h1, .card5 h1, .card6 h1 {
+    font-family: 'Poppins-Medium';
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.card1 p, .card2 p, .card3 p, .card4 p, .card5 p, .card6 p {
+    width: 90%;
+    font-family: 'Poppins-Light';
+    font-size: 15px;
+    color: #444;
+    line-height: 1.7;
+}
+
+.primary-btn-penyakit {
+    background-color: #30B0C7;
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-right: 20px;
+    position: relative;
+    box-shadow: 4px 4px 0px black;
+    transition: 0.3s ease-in-out;
+}
+
+.primary-btn-penyakit:hover {
+    background-color: #2480aa;
+    box-shadow: none;
+}
+
+.card_highlight6 {
+    width: 80%;
+    border: 1px solid black;
+    background-image: url('../Images/penyakit6.svg');
+    background-position: center;
+    background-size: cover;
+    animation: fadeInUp linear;
+    transition: 0.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 10% cover 40%;
+    border-radius: 15px 0px 0px 15px;
+
+}
+.card_text {
+    border-radius: 0px 15px 15px 0px;
+
+}
+/* penyakit 6 */
+
+/* Penyakit 6 Popup */
+.popup6 {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 40;
+}
+
+.popup-content6 {
+    background: white;
+    padding: 50px 50px 20px 50px;
+    border-radius: 15px;
+    text-align: center;
+    width: 100%;
+    height: 90%;
+    position: relative;
+    max-height: 80vh; 
+    max-width: 40%;
+    overflow-y: auto;
+    overflow-x: hidden; 
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.popup-content6 h2{
+    font-family: 'Poppins-Medium';
+    font-size: 30px;
+    background: white;
+    margin-top: 50px;
+    text-align: center;
+}
+.popup-content6 p{
+    background: white;
+    margin-top: 30px;
+    text-align: justify;
+}
+
+.popup_highlight6{
+    background: white;
+    height: 350px;
+    border: 1px solid;
+    border-color: black;
+    width: 100%;
+    border: 1px solid black;
+    background-image: url('../Images/penyakit6.svg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.popup-content6::-webkit-scrollbar {
+    width: 0px; 
+    display: none;
+}
+
+.popup-content6 {
+    scrollbar-width: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+/* Penyakit 6 Popup end*/
+
 .qna {
     width: 100vw;
     padding: 0px 110px;
-    margin-top: -5rem;
+    margin-top: -14rem;
 }
 
 .container-5 {
@@ -721,6 +1155,28 @@ body {
     display: block;
 }
 
+.background-olahraga {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    margin-top: -37rem;
+
+}
+
+.last-title {
+    width: 70%;
+    justify-content: center;
+    font-family: 'Poppins-Medium';
+    font-size: 60px;
+    text-align: center;
+    margin: 11rem auto;
+    animation: fadeInUp linear;
+    transition: 0.3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+
 .footer {
     width: 100%;
     height: 20px;
@@ -776,6 +1232,9 @@ footer {
     align-items: center;
     gap: 10px;
     margin-top: 22px;
+}
+.button-container a {
+    text-decoration: none;
 }
 
 .button {
