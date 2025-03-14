@@ -125,12 +125,14 @@ body {
 }
 
 .hero-content p {
+    width: 92%;
     font-family: 'Poppins-Light';
     font-size: 15px;
     color: #444;
     margin-top: 10px;
     line-height: 1.7;
     margin: 40px 0px;
+    text-align: justify;
     animation: fadeInLeft 0.9s ease-in-out forwards;
 }
 .dropdown-menu{
@@ -241,7 +243,7 @@ body {
 }
 
 .text-makanan-kanan h1 {
-    text-align: left;
+    text-align: justify;
     font-family: 'Poppins-Medium';
     font-stretch: extra-expanded;
     font-size: 50px;
@@ -289,7 +291,7 @@ body {
 
 .text-container {
     width: 45%;
-    text-align: left;
+    text-align: justify;
     margin-top: -5rem;
     margin-left: 60px;
 }
@@ -400,6 +402,7 @@ body {
 }
 .card1 p, .card2 p, .card3 p {
     width: 90%;
+    text-align: justify;
     font-family: 'Poppins-Light';
     font-size: 15px;
     color: #444;
@@ -550,7 +553,7 @@ body {
 }
 
 .text-olahraga-kanan h1 {
-    text-align: left;
+    text-align: justify;
     font-family: 'Poppins-Medium';
     font-stretch: extra-expanded;
     font-size: 50px;
@@ -588,7 +591,7 @@ body {
     border-radius: 12px;
     padding: 20px;
     width: 100%;
-    text-align: left;
+    text-align: justify;
 }
 
 .olahraga-img1 {
@@ -687,6 +690,8 @@ body {
 
 .blog-card p {
     font-family: 'Poppins-Light';
+    text-align: justify;
+    line-height: 1.7;
     font-size: 14px;
     color: #555;
     margin-bottom: 27px;
@@ -757,17 +762,14 @@ body {
 .popup-content p{
     background: white;
     margin-top: 30px;
-    text-align: center;
+    text-align: justify;
 }
 
 .popup_highlight1{
     background: white;
     height: 350px;
-    border: 1px solid;
-    border-color: black;
     width: 100%;
-    border: 1px solid black;
-    background-image: url('../Images/penyakit1.svg');
+    background-image: url('../Images/makanan.svg');
     background-position: center;
     background-size: cover;
     border-radius: 15px;
@@ -779,6 +781,273 @@ body {
 }
 
 .popup-content {
+    scrollbar-width: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.popup2 {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.popup-content2 {
+    background: white;
+    padding: 50px 50px 20px 50px;
+    border-radius: 15px;
+    text-align: center;
+    width: 40%;
+    height: 90%;
+    position: relative;
+    max-height: 80vh; 
+    overflow-y: auto;
+    overflow-x: hidden; 
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.popup-content2 h2{
+    font-family: 'Poppins-Medium';
+    font-size: 50px;
+    background: white;
+    margin-top: 50px;
+    text-align: center;
+}
+.popup-content2 p{
+    background: white;
+    margin-top: 30px;
+    text-align: justify;
+}
+
+.popup_highlight2{
+    background: white;
+    height: 350px;
+    width: 100%;
+    background-image: url('../Images/penyakit1.svg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.popup-content2::-webkit-scrollbar {
+    width: 0px; 
+    display: none;
+}
+
+.popup-content2 {
+    scrollbar-width: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.popup3 {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.popup-content3 {
+    background: white;
+    padding: 50px 50px 20px 50px;
+    border-radius: 15px;
+    text-align: center;
+    width: 40%;
+    height: 90%;
+    position: relative;
+    max-height: 80vh; 
+    overflow-y: auto;
+    overflow-x: hidden; 
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.popup-content3 h2{
+    font-family: 'Poppins-Medium';
+    font-size: 50px;
+    background: white;
+    margin-top: 50px;
+    text-align: center;
+}
+.popup-content3 p{
+    background: white;
+    margin-top: 30px;
+    text-align: justify;
+}
+
+.popup_highlight3{
+    background: white;
+    height: 350px;
+    width: 100%;
+    background-image: url('../Images/penyakit2.svg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.popup-content3::-webkit-scrollbar {
+    width: 0px; 
+    display: none;
+}
+
+.popup-content3 {
+    scrollbar-width: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.popup4 {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.popup-content4 {
+    background: white;
+    padding: 50px 50px 20px 50px;
+    border-radius: 15px;
+    text-align: center;
+    width: 40%;
+    height: 90%;
+    position: relative;
+    max-height: 80vh; 
+    overflow-y: auto;
+    overflow-x: hidden; 
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.popup-content4 h2{
+    font-family: 'Poppins-Medium';
+    font-size: 50px;
+    background: white;
+    margin-top: 50px;
+    text-align: center;
+}
+.popup-content4 p{
+    background: white;
+    margin-top: 30px;
+    text-align: justify;
+}
+
+.popup_highlight4{
+    background: white;
+    height: 350px;
+    width: 100%;
+    background-image: url('../Images/penyakit3.svg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.popup-content4::-webkit-scrollbar {
+    width: 0px; 
+    display: none;
+}
+
+.popup-content4 {
+    scrollbar-width: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.popup5 {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content5 {
+    background: white;
+    padding: 50px 50px 20px 50px;
+    border-radius: 15px;
+    text-align: center;
+    width: 40%;
+    height: 90%;
+    position: relative;
+    max-height: 80vh; 
+    overflow-y: auto;
+    overflow-x: hidden; 
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.popup-content5 h2{
+    font-family: 'Poppins-Medium';
+    font-size: 50px;
+    background: white;
+    margin-top: 50px;
+    text-align: center;
+}
+.popup-content5 p{
+    background: white;
+    margin-top: 30px;
+    text-align: justify;
+}
+
+.popup_highlight5{
+    background: white;
+    height: 350px;
+    width: 100%;
+    background-image: url('../Images/makanan.svg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.popup-content5::-webkit-scrollbar {
+    width: 0px; 
+    display: none;
+}
+
+.popup-content5 {
     scrollbar-width: none;
 }
 
@@ -846,6 +1115,11 @@ footer {
     gap: 10px;
     margin-top: 22px;
 }
+
+.button-container a {
+    text-decoration: none;
+}
+
 
 .button {
     background-color: transparent;
@@ -1120,7 +1394,7 @@ hr {
         width: 100%;
         font-size: 12px;
         padding: 0 50px;
-        text-align: left;
+        text-align: justify;
     }
 
     .primary-btn-makanan {
@@ -1271,7 +1545,7 @@ hr {
     }
 
     .blog-card {
-        text-align: left;
+        text-align: justify;
         padding: 30px;
         margin-bottom: 5px;
     }
@@ -1555,7 +1829,7 @@ hr {
         width: 100%;
         font-size: 14px;
         padding: 0 80px;
-        text-align: left;
+        text-align: justify;
     }
     
     .penyakit {
@@ -1663,7 +1937,7 @@ hr {
     }
 
     .blog-card {
-        text-align: left;
+        text-align: justify;
         padding: 40px;
         margin-bottom: 5px;
     }
@@ -1916,18 +2190,18 @@ hr {
 
     .text-container h2 {
         margin-bottom: 10px;
-        text-align: left;
+        text-align: justify;
     }
 
     .text-container h1 {
         font-size: 32px;
-        text-align: left;
+        text-align: justify;
     }
 
     .text-container p {
         width: 100%;
         font-size: 14px;
-        text-align: left;
+        text-align: justify;
     }
     
     .penyakit {
@@ -2048,7 +2322,7 @@ hr {
     }
 
     .blog-card {
-        text-align: left;
+        text-align: justify;
         padding: 40px 100px;
     }
 

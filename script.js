@@ -38,13 +38,20 @@ function closePopup4() {
     document.getElementById("popup4").style.display = "none";
 }
 
+<<<<<<< HEAD
 
 function openPopup5() {
     document.getElementById("popup5").style.display = "flex";
+=======
+// Function to open popup
+function openPopup5() {
+    document.getElementById("popup4").style.display = "flex";
+>>>>>>> f484cd00b0e6b096a50c510567fb67d4ca2965d1
 }
 
 // Function to close popup
 function closePopup5() {
+<<<<<<< HEAD
     document.getElementById("popup5").style.display = "none";
 }
 
@@ -215,4 +222,7 @@ function openPopup24() {
 // Function to close popup
 function closePopup24() {
     document.getElementById("popup24").style.display = "none";
+=======
+    document.getElementById("popup4").style.display = "none";
+>>>>>>> f484cd00b0e6b096a50c510567fb67d4ca2965d1
 }
