@@ -37,3 +37,13 @@ function openPopup4() {
 function closePopup4() {
     document.getElementById("popup4").style.display = "none";
 }
+
+// Function to open popup
+function openPopup5() {
+    document.getElementById("popup4").style.display = "flex";
+}
+
+// Function to close popup
+function closePopup5() {
+    document.getElementById("popup4").style.display = "none";
+}
